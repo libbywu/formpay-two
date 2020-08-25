@@ -1,0 +1,2166 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>線上商店申請表單</title>
+    <meta name="description"
+        content="">
+    <meta name="author" content="">
+    <meta name="copyright" content="">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+        integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./js/jquery-editable-select/jquery-editable-select.css"> -->
+    <link rel="stylesheet" href="./css/storedate.css">
+</head>
+
+<body>
+    <div class="container-fluid nav-top">
+        <nav class="container">
+            <div class="row col">
+                <a href="https://www.mypay.com.tw" target="_black"><img src="./images/logo_LIBBY.png" alt=""></a>
+            </div>
+        </nav>
+    </div>
+    <!-- <div class="container-fluid"> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list_join_mypay">
+                    <li><span class="txt2">選擇服務項目</span><span class="arrow_right"></span></li>
+                    <li class="on"><span class="txt2">填寫特約商店</span><span class="arrow_right"></span></li>
+
+                    <li class="lst_last"><span class="txt2">已完成</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-3">
+                <div class="sel-check orange">
+                    <div class="py-2">
+                        <input type="radio" name="btn_application" id="application_oneself" value="Yes">
+                        <label for="application_oneself">個人名義申請</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-5 col-lg-3">
+                <div class="sel-check orange">
+                    <div class="py-2">
+                        <input type="radio" name="btn_application" id="application_company" value="Yes" checked>
+                        <label for="application_company">公司名義申請</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 mb-md-3 text-center">
+                <p>✽ 帳號申請完成啟用後 即不能修改 ✽</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- </div> -->
+    <!--form-company begin-->
+    <div id="form_company" class="container-fluid bg-lightgray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 pt-md-5 pt-2">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <div class="row p-lg-3">
+                                    <div class="col-md-12">
+                                        <div class="input-group selectbox">
+                                            <div id="applyInv">
+                                                <input type="checkbox" id="invoice" name="invoice">
+                                                <label for="invoice">申請電子發票</label>
+                                                <small class="text-black-50">(NT500／月，本服務由金財通商務科技提供)</small>
+                                                <div class="invalid-feedback pl-md-2">申請電子發票服務，後續將有專人與您聯繫</div>
+                                            </div>
+                                        </div>
+                                        <!--商店基本資料 begin-->
+                                        <div class="titlebar">
+                                            <i class="fas fa-store"></i> 特約商店
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group"> <label for="id_name">公司名稱</label> <input
+                                                        id="id_name" name="id_name" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group"> <label for="tong_bian">統一編號</label> <input
+                                                        id="tong_bian" name="tong_bian" type="text"
+                                                        class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group"> <label>產業類別</label>
+                                                    <select class="form-control">
+                                                        <option selected value="">請選擇MCC碼</option>
+                                                        <option value="0000">0000 房地產租賃</option>
+                                                        <option value="0742">0742 獸醫</option>
+                                                        <option value="0763">0763 農特產</option>
+                                                        <option value="0780">0780 其他</option>
+                                                        <option value="1520">1520 一般建築</option>
+                                                        <option value="1711">1711 水管空調</option>
+                                                        <option value="1731">1731 電氣工程</option>
+                                                        <option value="1740">1740 石造工程</option>
+                                                        <option value="1750">1711 木匠工程</option>
+                                                        <option value="1761">1711 屋頂</option>
+                                                        <option value="1771">1711 室內裝潢、水泥、油漆</option>
+                                                        <option value="1799">1799 房屋仲介</option>
+                                                        <option value="2741">2741 出版印刷業</option>
+                                                        <option value="2842">2842 打掃衛生</option>
+                                                        <option value="...">...</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group"> <label for="setup_date">設立日期</label> <input
+                                                        id="setup_date" name="setup_date" type="text"
+                                                        class="form-control" placeholder="(西元)年 / 月 / 日"
+                                                        onfocus="(this.type='date')" onblur="(this.type='text')"></div>
+                                            </div>
+
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="form-group"> <label>登記地址</label>
+                                                    <div class="form-inline pb-2">
+                                                        <div class="input-group width_auto">
+                                                            <input id="zip_code" name="zip_code" type="text"
+                                                                class="form-control areacode_ads" placeholder="郵遞區號">
+                                                        </div>
+                                                        <select id="city_code" tag-id="city_code" name="city_code"
+                                                            class="form-control width_auto mx-sm-2">
+                                                            <option selected="selected" value="">縣市</option>
+                                                            <option value="5">基隆市</option>
+                                                            <option value="15">臺北市</option>
+                                                            <option value="9">新北市</option>
+                                                            <option value="12">桃園市</option>
+                                                            <option value="11">新竹縣</option>
+                                                            <option value="10">新竹市</option>
+                                                            <option value="19">苗栗縣</option>
+                                                            <option value="14">臺中市</option>
+                                                            <option value="8">彰化縣</option>
+                                                            <option value="23">雲林縣</option>
+                                                            <option value="4">嘉義縣</option>
+                                                            <option value="3">嘉義市</option>
+                                                            <option value="16">臺南市</option>
+                                                            <option value="24">高雄市</option>
+                                                            <option value="7">屏東縣</option>
+                                                            <option value="17">臺東縣</option>
+                                                            <option value="18">花蓮縣</option>
+                                                            <option value="6">宜蘭縣</option>
+                                                            <option value="13">澎湖縣</option>
+                                                            <option value="1">南投縣</option>
+                                                            <option value="20">連江縣</option>
+                                                            <option value="21">金門縣</option>
+                                                            <option value="22">釣魚臺</option>
+                                                            <option value="2">南海島</option>
+                                                        </select>
+                                                        <select id="district_code" name="district_code"
+                                                            class="form-control width_auto">
+                                                            <option selected="selected" value="">鄉鎮市區</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-group form-group">
+                                                        <input type="text" id="address" name="address" maxlength="80"
+                                                            class="form-control" placeholder="請輸入登記地址">
+                                                    </div>
+                                                </div>
+                                                <div class="form-inline pb-3">
+                                                    <div class="pl-2 basic radio radio-warning">
+                                                        <input id="invoice-send-1" type="radio"
+                                                            name="invoice-send"><label for="invoice-send-1">發票寄送此地址
+                                                        </label>
+                                                    </div>
+                                                    <div class="pl-4 basic checkbox checkbox-success">
+                                                        <input id="really_address_btn" name="really_address_btn"
+                                                            type="checkbox" checked><label
+                                                            for="really_address_btn">同營業地址 </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="open-address" class="col-md-12 col-lg-6" style="display: none;">
+                                                <div class="form-group"> <label>營業地址</label>
+                                                    <div class="form-inline pb-2">
+                                                        <div class="input-group width_auto">
+                                                            <input id="zip_code" name="zip_code" type="text"
+                                                                class="form-control areacode_ads" placeholder="郵遞區號">
+                                                        </div>
+                                                        <select id="city_code" tag-id="city_code" name="city_code"
+                                                            class="form-control width_auto mx-sm-2">
+                                                            <option selected="selected" value="">縣市</option>
+                                                            <option value="5">基隆市</option>
+                                                            <option value="15">臺北市</option>
+                                                            <option value="9">新北市</option>
+                                                            <option value="12">桃園市</option>
+                                                            <option value="11">新竹縣</option>
+                                                            <option value="10">新竹市</option>
+                                                            <option value="19">苗栗縣</option>
+                                                            <option value="14">臺中市</option>
+                                                            <option value="8">彰化縣</option>
+                                                            <option value="23">雲林縣</option>
+                                                            <option value="4">嘉義縣</option>
+                                                            <option value="3">嘉義市</option>
+                                                            <option value="16">臺南市</option>
+                                                            <option value="24">高雄市</option>
+                                                            <option value="7">屏東縣</option>
+                                                            <option value="17">臺東縣</option>
+                                                            <option value="18">花蓮縣</option>
+                                                            <option value="6">宜蘭縣</option>
+                                                            <option value="13">澎湖縣</option>
+                                                            <option value="1">南投縣</option>
+                                                            <option value="20">連江縣</option>
+                                                            <option value="21">金門縣</option>
+                                                            <option value="22">釣魚臺</option>
+                                                            <option value="2">南海島</option>
+                                                        </select>
+                                                        <select id="district_code" name="district_code"
+                                                            class="form-control width_auto">
+                                                            <option selected="selected" value="">鄉鎮市區</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-group form-group">
+                                                        <input type="text" id="address" name="address" maxlength="80"
+                                                            class="form-control" placeholder="請輸入營業地址">
+                                                    </div>
+                                                </div>
+                                                <div class="pl-1 basic radio radio-warning">
+                                                    <input id="invoice-send-2" type="radio" name="invoice-send"
+                                                        value=""> <label for="invoice-send-2">發票寄送此地址 </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-inline form-group"> <label>資本額 &ensp;</label>
+                                                    <select class="form-control width_auto mr-2">
+                                                        <option value="NTD">台幣</option>
+                                                        <option value="USD">美元</option>
+                                                        <option value="CNY">人民幣</option>
+                                                        <option value="HKD">港幣</option>
+                                                        <option value="JPY">日元</option>
+                                                        <option value="EUR">歐元</option>
+                                                    </select>
+                                                    <input id="capital" name="capital" type="text"
+                                                        class="form-control width_long">
+                                                    &ensp;元
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12 mt-3">
+                                                <div class="alert alert-warning">
+                                                    <h6 class="alert-heading"><i class="fas fa-user-tie"></i>
+                                                        公司客服資訊，會顯示於客戶收到之交易通知中</h6>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <div class="form-inline">
+                                                                    <span>客服類型</span>
+                                                                    <div class="basic radio radio-warning ml-2">
+                                                                        <input id="services_line" type="radio"
+                                                                            name="company-sv"> <label
+                                                                            for="services_line">line</label>
+                                                                    </div>
+                                                                    <div class="basic radio radio-warning ml-2">
+                                                                        <input id="services_tel" type="radio"
+                                                                            name="company-sv"> <label
+                                                                            for="services_tel">電話</label>
+                                                                    </div>
+                                                                    <div class="basic radio radio-warning ml-2">
+                                                                        <input id="services_mobile" type="radio"
+                                                                            name="company-sv"> <label
+                                                                            for="services_mobile">手機</label>
+                                                                    </div>
+                                                                </div>
+                                                                <!--選擇後 下面再出現-->
+
+                                                                <div id="services_line_open" class="pt-2"
+                                                                    style="display:none;">
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="請輸入line ID">
+                                                                </div>
+
+                                                                <div id="services_tel_open" class="input-group pt-2"
+                                                                    style="display:none;">
+                                                                    <select class="area" id="principal_phone_code"
+                                                                        name="principal_phone_code">
+                                                                        <option value="886">TW-886</option>
+                                                                        <option value="86">CN-86</option>
+                                                                        <option value="852">HK-852</option>
+                                                                        <option value="853">MO-853</option>
+                                                                        <option value="84">VN-84</option>
+                                                                        <option value="65">SG-65</option>
+                                                                        <option value="60">MY-60</option>
+                                                                        <option value="66">TH-66</option>
+                                                                        <option value="1">US-1</option>
+                                                                        <option value="1">CA-1</option>
+                                                                        <option value="81">JP-81</option>
+                                                                        <option value="44">UK-44</option>
+                                                                        <option value="61">AU-61</option>
+                                                                        <option value="64">NZ-64</option>
+                                                                    </select>
+                                                                    <input id="service_phone" name="service_phone"
+                                                                        type="text" class="form-control"
+                                                                        placeholder="02-27208889">
+                                                                </div>
+
+                                                                <div id="services_mobile_open" class="input-group pt-2"
+                                                                    style="display:none;">
+                                                                    <select class="area" id="principal_phone_code"
+                                                                        name="principal_phone_code">
+                                                                        <option value="886">TW-886</option>
+                                                                        <option value="86">CN-86</option>
+                                                                        <option value="852">HK-852</option>
+                                                                        <option value="853">MO-853</option>
+                                                                        <option value="84">VN-84</option>
+                                                                        <option value="65">SG-65</option>
+                                                                        <option value="60">MY-60</option>
+                                                                        <option value="66">TH-66</option>
+                                                                        <option value="1">US-1</option>
+                                                                        <option value="1">CA-1</option>
+                                                                        <option value="81">JP-81</option>
+                                                                        <option value="44">UK-44</option>
+                                                                        <option value="61">AU-61</option>
+                                                                        <option value="64">NZ-64</option>
+                                                                    </select>
+                                                                    <input id="service_phone2" name="service_phone2"
+                                                                        type="text" class="form-control"
+                                                                        placeholder="0988-888888">
+                                                                </div>
+                                                                <!--*****-->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group"> <label for="service_mail">客服
+                                                                    E-mail</label> <input id="service_mail"
+                                                                    name="service_mail" type="text"
+                                                                    class="form-control"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="alert alert-warning">
+                                                    <h6 class="alert-heading"><i class="fas fa-credit-card"></i>
+                                                        信用卡交易之顯示名稱<small class="pl-2">* 中英文10字元內，發送驗證簡訊使用</small></h6>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group"> <label
+                                                                    for="zh_tw_name">國內交易名稱(中、英文不拘)</label> <input
+                                                                    id="zh_tw_name" name="zh_tw_name" type="text"
+                                                                    class="form-control" maxlength="10"></div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group"> <label
+                                                                    for="en_us_name">國外交易名稱(英文)</label> <input
+                                                                    id="en_us_name" name="en_us_name" type="text"
+                                                                    class="form-control" maxlength="10">
+                                                                <small> * 提供收單銀行存查使用</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--商店基本資料 end-->
+                                    </div>
+
+                                    <!-- 負責人資料 begin-->
+                                    <div class="col-md-12 ">
+                                        <div class="titlebar">
+                                            <i class="fas fa-user"></i> 負責人
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group"> <label for="principal_name">姓名</label> <input
+                                                        id="principal_name" name="principal_name" type="text"
+                                                        class="form-control" required="" placeholder=""></div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group"> <label>出生日期(西元)</label>
+                                                    <div class="form-inline">
+                                                        <select id="mon_personalBD" class="form-control width_auto">
+                                                            <option value="18">2001</option>
+                                                            <option value="19">2000</option>
+                                                            <option value="20">1999</option>
+                                                            <option value="21">1998</option>
+                                                            <option value="22">1997</option>
+                                                            <option value="23">1996</option>
+                                                            <option value="24">1995</option>
+                                                            <option value="25">1994</option>
+                                                            <option value="26">1993</option>
+                                                            <option value="27">1992</option>
+                                                            <option value="28">1991</option>
+                                                            <option value="29">1990</option>
+                                                            <option value="30">1989</option>
+                                                            <option value="31">1988</option>
+                                                            <option value="32">1987</option>
+                                                            <option value="33">1986</option>
+                                                            <option value="34">1985</option>
+                                                            <option value="35">1984</option>
+                                                            <option value="36">1983</option>
+                                                            <option value="37">1982</option>
+                                                            <option value="38">1981</option>
+                                                            <option value="39">1980</option>
+                                                            <option value="40">1979</option>
+                                                            <option value="41">1978</option>
+                                                            <option value="42">1977</option>
+                                                            <option value="43">1976</option>
+                                                            <option value="44">1975</option>
+                                                            <option value="45">1974</option>
+                                                            <option value="46">1973</option>
+                                                            <option value="47">1972</option>
+                                                            <option value="48">1971</option>
+                                                            <option value="49">1970</option>
+                                                            <option value="50">1969</option>
+                                                            <option value="51">1968</option>
+                                                            <option value="52">1967</option>
+                                                            <option value="53">1966</option>
+                                                            <option value="54">1965</option>
+                                                            <option value="55">1964</option>
+                                                            <option value="56">1963</option>
+                                                            <option value="57">1962</option>
+                                                            <option value="58">1961</option>
+                                                            <option value="59">1960</option>
+                                                            <option value="60">1959</option>
+                                                            <option value="61">1958</option>
+                                                            <option value="62">1957</option>
+                                                            <option value="63">1956</option>
+                                                            <option value="64">1955</option>
+                                                            <option value="65">1954</option>
+                                                            <option value="66">1953</option>
+                                                            <option value="67">1952</option>
+                                                            <option value="68">1951</option>
+                                                            <option value="69">1950</option>
+                                                        </select>
+                                                        <label class="mx-2" for="mon_personalBD">年</label>
+                                                        <select id="mon_personalBD" class="form-control width_auto">
+                                                            <option value="01">01</option>
+                                                            <option value="02">02</option>
+                                                            <option value="03">03</option>
+                                                            <option value="04">04</option>
+                                                            <option value="05">05</option>
+                                                            <option value="06">06</option>
+                                                            <option value="07">07</option>
+                                                            <option value="08">08</option>
+                                                            <option value="09">09</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                        </select>
+                                                        <label class="mx-2" for="mon_personalBD">月</label>
+                                                        <select id="date" class="form-control width_auto mr-2">
+                                                            <option value="01">01</option>
+                                                            <option value="02">02</option>
+                                                            <option value="03">03</option>
+                                                            <option value="04">04</option>
+                                                            <option value="05">05</option>
+                                                            <option value="06">06</option>
+                                                            <option value="07">07</option>
+                                                            <option value="08">08</option>
+                                                            <option value="09">09</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                            <option value="13">13</option>
+                                                            <option value="14">14</option>
+                                                            <option value="15">15</option>
+                                                            <option value="16">16</option>
+                                                            <option value="17">17</option>
+                                                            <option value="18">18</option>
+                                                            <option value="19">19</option>
+                                                            <option value="20">20</option>
+                                                            <option value="21">21</option>
+                                                            <option value="22">22</option>
+                                                            <option value="23">23</option>
+                                                            <option value="24">24</option>
+                                                            <option value="25">25</option>
+                                                            <option value="26">26</option>
+                                                            <option value="27">27</option>
+                                                            <option value="28">28</option>
+                                                            <option value="29">29</option>
+                                                            <option value="30">30</option>
+                                                            <option value="31">31</option>
+                                                        </select>
+                                                        <label for="date">日</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group"> <label for="principal_id">身分證字號</label> <input
+                                                        id="principal_id" name="principal_id" type="text"
+                                                        class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="principal_phone">聯絡電話</label>
+                                                    <div class="input-group">
+                                                        <select class="area" id="principal_phone_code"
+                                                            name="principal_phone_code">
+                                                            <option value="886">TW-886</option>
+                                                            <option value="86">CN-86</option>
+                                                            <option value="852">HK-852</option>
+                                                            <option value="853">MO-853</option>
+                                                            <option value="84">VN-84</option>
+                                                            <option value="65">SG-65</option>
+                                                            <option value="60">MY-60</option>
+                                                            <option value="66">TH-66</option>
+                                                            <option value="1">US-1</option>
+                                                            <option value="1">CA-1</option>
+                                                            <option value="81">JP-81</option>
+                                                            <option value="44">UK-44</option>
+                                                            <option value="61">AU-61</option>
+                                                            <option value="64">NZ-64</option>
+                                                        </select>
+                                                        <input type="tel" id="principal_phone" name="principal_phone"
+                                                            class="form-control" placeholder="02-27208889">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="principal_cellphone">行動電話</label>
+                                                    <div class="input-group">
+                                                        <select class="area" id="principal_phone_code"
+                                                            name="principal_phone_code">
+                                                            <option value="886">TW-886</option>
+                                                            <option value="86">CN-86</option>
+                                                            <option value="852">HK-852</option>
+                                                            <option value="853">MO-853</option>
+                                                            <option value="84">VN-84</option>
+                                                            <option value="65">SG-65</option>
+                                                            <option value="60">MY-60</option>
+                                                            <option value="66">TH-66</option>
+                                                            <option value="1">US-1</option>
+                                                            <option value="1">CA-1</option>
+                                                            <option value="81">JP-81</option>
+                                                            <option value="44">UK-44</option>
+                                                            <option value="61">AU-61</option>
+                                                            <option value="64">NZ-64</option>
+                                                        </select>
+                                                        <input type="tel" id="principal_cellphone"
+                                                            name="principal_cellphone" class="form-control"
+                                                            placeholder="0988-888888">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group"> <label for="principal_email">E-mail</label>
+                                                    <input id="principal_email" name="principal_email" type="text"
+                                                        class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="form-group"> <label>戶藉地址</label>
+                                                    <div class="form-inline pb-2">
+                                                        <div class="input-group width_auto">
+                                                            <input id="principal_zip_code" name="principal_zip_code"
+                                                                type="text" class="form-control areacode_ads"
+                                                                placeholder="郵遞區號">
+                                                        </div>
+                                                        <select id="principal_city_code" tag-id="city_code"
+                                                            name="principal_city_code"
+                                                            class="form-control width_auto mx-sm-2">
+                                                            <option selected="selected" value="">縣市</option>
+                                                            <option value="5">基隆市</option>
+                                                            <option value="15">臺北市</option>
+                                                            <option value="9">新北市</option>
+                                                            <option value="12">桃園市</option>
+                                                            <option value="11">新竹縣</option>
+                                                            <option value="10">新竹市</option>
+                                                            <option value="19">苗栗縣</option>
+                                                            <option value="14">臺中市</option>
+                                                            <option value="8">彰化縣</option>
+                                                            <option value="23">雲林縣</option>
+                                                            <option value="4">嘉義縣</option>
+                                                            <option value="3">嘉義市</option>
+                                                            <option value="16">臺南市</option>
+                                                            <option value="24">高雄市</option>
+                                                            <option value="7">屏東縣</option>
+                                                            <option value="17">臺東縣</option>
+                                                            <option value="18">花蓮縣</option>
+                                                            <option value="6">宜蘭縣</option>
+                                                            <option value="13">澎湖縣</option>
+                                                            <option value="1">南投縣</option>
+                                                            <option value="20">連江縣</option>
+                                                            <option value="21">金門縣</option>
+                                                            <option value="22">釣魚臺</option>
+                                                            <option value="2">南海島</option>
+                                                        </select>
+                                                        <select id="principal_district_code"
+                                                            name="principal_district_code"
+                                                            class="form-control width_auto">
+                                                            <option selected="selected" value="">鄉鎮市區</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-group form-group">
+                                                        <input id="principal_address" name="principal_address"
+                                                            type="text" maxlength="80" class="form-control"
+                                                            placeholder="請輸入聯絡地址">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 負責人資料 end-->
+                                    <!-- 連絡人資料 begin-->
+                                    <div class="col-md-12 ">
+                                        <div class="titlebar">
+                                            <i class="fas fa-phone-square"></i> 連絡人
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row mx-md-1 alert alert-purple">
+
+                                                    <div class="col-12 d-flex justify-content-start align-items-center">
+                                                        <h5 class="">業務窗口</h5>
+                                                        <div class="basic checkbox checkbox-purple pt-2 pl-3"> <input
+                                                                id="businessman" type="checkbox" name="businessman"
+                                                                value=""> <label for="businessman">同負責人
+                                                            </label></div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"> <label for="salesman_name">姓名</label>
+                                                            <input id="salesman_name" name="salesman_name" type="text"
+                                                                class="form-control"></div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"> <label
+                                                                for="salesman_mail">E-mail</label> <small
+                                                                class="float-right"> * 開通首次之帳號/密碼發送</small><input
+                                                                id="salesman_mail" name="salesman_mail" type="email"
+                                                                class="form-control"></div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="">聯絡電話</label>
+                                                            <div class="input-group">
+                                                                <select id="principal_phone_code"
+                                                                    name="principal_phone_code" class="area">
+                                                                    <option value="886">TW-886</option>
+                                                                    <option value="86">CN-86</option>
+                                                                    <option value="852">HK-852</option>
+                                                                    <option value="853">MO-853</option>
+                                                                    <option value="84">VN-84</option>
+                                                                    <option value="65">SG-65</option>
+                                                                    <option value="60">MY-60</option>
+                                                                    <option value="66">TH-66</option>
+                                                                    <option value="1">US-1</option>
+                                                                    <option value="1">CA-1</option>
+                                                                    <option value="81">JP-81</option>
+                                                                    <option value="44">UK-44</option>
+                                                                    <option value="61">AU-61</option>
+                                                                    <option value="64">NZ-64</option>
+                                                                </select>
+                                                                <input id="principal_phone" name="principal_phone"
+                                                                    type="tel" class="form-control"
+                                                                    placeholder="02-27208889">
+                                                                <input id="salesman_ext" name="salesman_ext" type="text"
+                                                                    class="ext">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="">行動電話</label>
+                                                            <div class="input-group">
+                                                                <select class="area" name="principal_cellphone_code"
+                                                                    id="principal_cellphone_code">
+                                                                    <option value="886">TW-886</option>
+                                                                    <option value="86">CN-86</option>
+                                                                    <option value="852">HK-852</option>
+                                                                    <option value="853">MO-853</option>
+                                                                    <option value="84">VN-84</option>
+                                                                    <option value="65">SG-65</option>
+                                                                    <option value="60">MY-60</option>
+                                                                    <option value="66">TH-66</option>
+                                                                    <option value="1">US-1</option>
+                                                                    <option value="1">CA-1</option>
+                                                                    <option value="81">JP-81</option>
+                                                                    <option value="44">UK-44</option>
+                                                                    <option value="61">AU-61</option>
+                                                                    <option value="64">NZ-64</option>
+                                                                </select>
+                                                                <input type="tel" id="principal_cellphone"
+                                                                    name="principal_cellphone" placeholder="0937-123456"
+                                                                    class="form-control" placeholder="0988-888888">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row mx-md-1 alert alert-purple">
+                                                    <div class="col-12 d-flex justify-content-start align-items-center">
+                                                        <h5 class="">帳務窗口</h5>
+                                                        <div class="basic checkbox checkbox-purple pt-2 pl-3"> <input
+                                                                id="sales" type="checkbox" name="sales"> <label
+                                                                for="sales">同業務
+                                                            </label></div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"> <label for="accountant_name">姓名</label>
+                                                            <input id="accountant_name" name="accountant_name"
+                                                                type="text" class="form-control" required=""></div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"> <label
+                                                                for="accountant_mail">E-mail</label><small
+                                                                class="float-right"> * 帳務相關通知</small> <input
+                                                                id="accountant_mail" name="accountant_mail" type="email"
+                                                                class="form-control"></div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="">聯絡電話</label>
+                                                            <div class="input-group">
+                                                                <select id="salesman_phone_code"
+                                                                    name="salesman_phone_code" class="area">
+                                                                    <option value="886">TW-886</option>
+                                                                    <option value="86">CN-86</option>
+                                                                    <option value="852">HK-852</option>
+                                                                    <option value="853">MO-853</option>
+                                                                    <option value="84">VN-84</option>
+                                                                    <option value="65">SG-65</option>
+                                                                    <option value="60">MY-60</option>
+                                                                    <option value="66">TH-66</option>
+                                                                    <option value="1">US-1</option>
+                                                                    <option value="1">CA-1</option>
+                                                                    <option value="81">JP-81</option>
+                                                                    <option value="44">UK-44</option>
+                                                                    <option value="61">AU-61</option>
+                                                                    <option value="64">NZ-64</option>
+                                                                </select>
+                                                                <input type="tel" id="salesman_phone"
+                                                                    name="salesman_phone" class="form-control"
+                                                                    placeholder="02-27208889">
+                                                                <input id="salesman_ext" name="salesman_ext" type="tel"
+                                                                    class="ext" placeholder="分機">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="">行動電話</label>
+                                                            <div class="input-group">
+                                                                <select class="area" name="salesman_cellphone_code"
+                                                                    id="salesman_cellphone_code">
+                                                                    <option value="886">TW-886</option>
+                                                                    <option value="86">CN-86</option>
+                                                                    <option value="852">HK-852</option>
+                                                                    <option value="853">MO-853</option>
+                                                                    <option value="84">VN-84</option>
+                                                                    <option value="65">SG-65</option>
+                                                                    <option value="60">MY-60</option>
+                                                                    <option value="66">TH-66</option>
+                                                                    <option value="1">US-1</option>
+                                                                    <option value="1">CA-1</option>
+                                                                    <option value="81">JP-81</option>
+                                                                    <option value="44">UK-44</option>
+                                                                    <option value="61">AU-61</option>
+                                                                    <option value="64">NZ-64</option>
+                                                                </select>
+                                                                <input type="tel" id="salesman_cellphone"
+                                                                    name="salesman_cellphone" class="form-control"
+                                                                    placeholder="0988-888888">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="">傳真電話</label>
+                                                            <div class="input-group">
+                                                                <select name="phonearea" class="area">
+                                                                    <option value="886">TW-886</option>
+                                                                    <option value="86">CN-86</option>
+                                                                    <option value="852">HK-852</option>
+                                                                    <option value="853">MO-853</option>
+                                                                    <option value="84">VN-84</option>
+                                                                    <option value="65">SG-65</option>
+                                                                    <option value="60">MY-60</option>
+                                                                    <option value="66">TH-66</option>
+                                                                    <option value="1">US-1</option>
+                                                                    <option value="1">CA-1</option>
+                                                                    <option value="81">JP-81</option>
+                                                                    <option value="44">UK-44</option>
+                                                                    <option value="61">AU-61</option>
+                                                                    <option value="64">NZ-64</option>
+                                                                </select>
+                                                                <input id="accountant_fax" name="accountant_fax"
+                                                                    type="tel" class="form-control"
+                                                                    placeholder="02-27208889">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row mx-md-1 alert alert-purple">
+                                                    <div class="col-12 d-flex justify-content-start align-items-center">
+                                                        <h5>技術窗口</h5>
+                                                        <div class="basic radio radio-purple pt-2 pl-3"> <input
+                                                                id="salesman" type="radio" name="technology" value="">
+                                                            <label for="salesman">同業務</label></div>
+                                                        <div class="basic radio radio-purple pt-2 pl-3"> <input
+                                                                id="Accounting" type="radio" name="technology" value="">
+                                                            <label for="Accounting">同帳務</label></div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"> <label for="technician_name">姓名</label>
+                                                            <input id="technician_name" name="technician_name"
+                                                                type="text" class="form-control"></div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"> <label
+                                                                for="technician_mail">E-mail</label> <small
+                                                                class="float-right"> * 系統資訊/相關問題通知</small><input
+                                                                id="technician_mail" name="technician_mail" type="email"
+                                                                class="form-control"></div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="">聯絡電話</label>
+                                                            <div class="input-group">
+                                                                <select id="technician_phone_code"
+                                                                    name="technician_phone_code" class="area">
+                                                                    <option value="886">TW-886</option>
+                                                                    <option value="86">CN-86</option>
+                                                                    <option value="852">HK-852</option>
+                                                                    <option value="853">MO-853</option>
+                                                                    <option value="84">VN-84</option>
+                                                                    <option value="65">SG-65</option>
+                                                                    <option value="60">MY-60</option>
+                                                                    <option value="66">TH-66</option>
+                                                                    <option value="1">US-1</option>
+                                                                    <option value="1">CA-1</option>
+                                                                    <option value="81">JP-81</option>
+                                                                    <option value="44">UK-44</option>
+                                                                    <option value="61">AU-61</option>
+                                                                    <option value="64">NZ-64</option>
+                                                                </select>
+                                                                <input type="tel" id="technician_phone"
+                                                                    name="technician_phone" class="form-control"
+                                                                    placeholder="02-27208889">
+                                                                <input type="tel" id="technician_ext"
+                                                                    name="technician_ext" class="ext" placeholder="分機">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="">行動電話</label>
+                                                            <div class="input-group">
+                                                                <select class="area" name="technician_cellphone_code"
+                                                                    id="technician_cellphone_code">
+                                                                    <option value="886">TW-886</option>
+                                                                    <option value="86">CN-86</option>
+                                                                    <option value="852">HK-852</option>
+                                                                    <option value="853">MO-853</option>
+                                                                    <option value="84">VN-84</option>
+                                                                    <option value="65">SG-65</option>
+                                                                    <option value="60">MY-60</option>
+                                                                    <option value="66">TH-66</option>
+                                                                    <option value="1">US-1</option>
+                                                                    <option value="1">CA-1</option>
+                                                                    <option value="81">JP-81</option>
+                                                                    <option value="44">UK-44</option>
+                                                                    <option value="61">AU-61</option>
+                                                                    <option value="64">NZ-64</option>
+                                                                </select>
+                                                                <input type="tel" id="technician_cellphone"
+                                                                    name="technician_cellphone" class="form-control"
+                                                                    placeholder="0988-888888">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 連絡人資料 end-->
+
+                                </div>
+
+                                <!--上傳檔案begin-->
+                                <div class="col-md-12">
+                                    <div class="titlebar">
+                                        <i class="far fa-file-image"></i> 文件上傳
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="wrap_table_r">
+                                                <div class="c_table">
+                                                    <div class="c_tr header">
+                                                        <div class="c_td">
+                                                            文件名稱
+                                                        </div>
+                                                        <div class="c_td">
+                                                            檔案類型：.jpg .jpeg .pdf .png
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            負責人身分證正面
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'>上傳的檔案放這裡</div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            負責人身分證反面
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'></div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            負責人第二證件(有照片之駕照、健保卡(擇一))
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'></div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            變更事項登記表、核準函(檔案類型：pdf)
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'></div>
+                                                                <input class="input-file" type="file" accept=".pdf ">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            近二期401報表 或 404報表
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'></div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png " multiple>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            營業照片4張(包含地址、店名)
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'></div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png " multiple>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            銀行存摺封面
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'></div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            其他
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'></div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            其他
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'></div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                            </label>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--上傳檔案end-->
+                                <div class="col-md-12">
+                                    <div class="titlebar">
+                                        <i class="far fa-file-image"></i> 撥款帳戶
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 col-md-3">
+                                            <div class="form-group">
+                                                <label for="allot_bank_country">國別</label>
+                                                <select id="allot_bank_country" name="allot_bank_country"
+                                                    class="form-control">
+                                                    <option selected value=""></option>
+                                                    <option value="">中華民國</option>
+                                                    <option value="">香港</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="form-group">
+                                                <label for="allot_bank_currency">幣別</label>
+                                                <select id="allot_bank_currency" name="allot_bank_currency"
+                                                    class="form-control">
+                                                    <option selected value=""></option>
+                                                    <option value="NTD">台幣</option>
+                                                    <option value="USD">美元</option>
+                                                    <option value="CNY">人民幣</option>
+                                                    <option value="HKD">港幣</option>
+                                                    <option value="JPY">日圓</option>
+                                                    <option value="EUR">歐元</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="form-group">
+                                                <label for="allot_bank_name_1">選擇銀行</label>
+                                                <select class="form-control" id="allot_bank_name_1"
+                                                    name="allot_bank_name_1" tabindex="-1" aria-hidden="true">
+                                                    <option selected value=""></option>
+                                                    <option value="1">000 中央銀行</option>
+                                                    <option value="2">004 臺灣銀行</option>
+                                                    <option value="3">005 土地銀行</option>
+                                                    <option value="4">006 合作金庫</option>
+                                                    <option value="5">007 第一銀行</option>
+                                                    <option value="6">008 華南銀行</option>
+                                                    <option value="7">009 彰化銀行</option>
+                                                    <option value="8">011 上海銀行</option>
+                                                    <option value="9">012 台北富邦</option>
+                                                    <option value="10">013 國泰世華</option>
+                                                    <option value="11">016 高雄銀行</option>
+                                                    <option value="12">017 兆豐銀行</option>
+                                                    <option value="13">018 農業金庫</option>
+                                                    <option value="14">020 日商瑞穗銀行</option>
+                                                    <option value="15">021 花旗銀行</option>
+                                                    <option value="16">022 美國銀行</option>
+                                                    <option value="17">023 盤谷銀行</option>
+                                                    <option value="18">025 首都銀行</option>
+                                                    <option value="19">029 新加坡大華銀行</option>
+                                                    <option value="20">030 美商道富銀行</option>
+                                                    <option value="21">039 澳盛銀行</option>
+                                                    <option value="22">048 王道銀行</option>
+                                                    <option value="23">050 臺灣企銀</option>
+                                                    <option value="24">052 渣打銀行</option>
+                                                    <option value="25">053 台中銀行</option>
+                                                    <option value="26">054 京城銀行</option>
+                                                    <option value="27">060 兆豐票券</option>
+                                                    <option value="28">061 中華票券</option>
+                                                    <option value="29">062 國際票券</option>
+                                                    <option value="30">066 萬通票券</option>
+                                                    <option value="31">072 德意志銀行</option>
+                                                    <option value="32">075 東亞銀行</option>
+                                                    <option value="33">076 摩根大通銀行</option>
+                                                    <option value="34">081 滙豐銀行</option>
+                                                    <option value="35">082 巴黎銀行</option>
+                                                    <option value="36">085 新加坡華僑銀行</option>
+                                                    <option value="37">086 東方匯理銀行</option>
+                                                    <option value="38">092 瑞士銀行</option>
+                                                    <option value="39">093 安智銀行</option>
+                                                    <option value="40">098 三菱東京日聯銀行</option>
+                                                    <option value="41">101 瑞興銀行</option>
+                                                    <option value="42">102 華泰銀行</option>
+                                                    <option value="43">103 新光銀行</option>
+                                                    <option value="44">104 台北五信</option>
+                                                    <option value="45">108 陽信銀行</option>
+                                                    <option value="46">114 基隆一信</option>
+                                                    <option value="47">115 基隆二信</option>
+                                                    <option value="48">118 板信銀行</option>
+                                                    <option value="49">119 淡水一信</option>
+                                                    <option value="50">120 淡水信合社</option>
+                                                    <option value="51">124 宜蘭信合社</option>
+                                                    <option value="52">127 桃園信合社</option>
+                                                    <option value="53">130 新竹一信</option>
+                                                    <option value="54">132 新竹三信</option>
+                                                    <option value="55">146 台中二信</option>
+                                                    <option value="56">147 三信銀行</option>
+                                                    <option value="57">158 彰化一信</option>
+                                                    <option value="58">161 彰化五信</option>
+                                                    <option value="59">162 彰化六信</option>
+                                                    <option value="60">163 彰化十信</option>
+                                                    <option value="61">165 鹿港信合社</option>
+                                                    <option value="62">178 嘉義三信</option>
+                                                    <option value="63">188 台南三信</option>
+                                                    <option value="64">204 高雄三信</option>
+                                                    <option value="65">215 花蓮一信</option>
+                                                    <option value="66">216 花蓮二信</option>
+                                                    <option value="67">222 澎湖一信</option>
+                                                    <option value="68">223 澎湖二信</option>
+                                                    <option value="69">224 金門信合社</option>
+                                                    <option value="70">321 三井住友銀行</option>
+                                                    <option value="71">372 大慶票券</option>
+                                                    <option value="72">380 中國銀行</option>
+                                                    <option value="73">381 交通銀行</option>
+                                                    <option value="74">382 中國建設銀行</option>
+                                                    <option value="75">503 基隆漁會</option>
+                                                    <option value="76">504 瑞芳/萬里漁會</option>
+                                                    <option value="77">505 頭城/蘇澳漁會</option>
+                                                    <option value="78">506 桃園漁會</option>
+                                                    <option value="79">507 新竹漁會</option>
+                                                    <option value="80">512 雲林區漁會</option>
+                                                    <option value="81">515 嘉義區漁會</option>
+                                                    <option value="82">517 南市區漁會</option>
+                                                    <option value="83">518 南縣區漁會</option>
+                                                    <option value="84">520 小港區漁會；高雄區漁會</option>
+                                                    <option value="85">521 彌陀/永安/興達港/林園區漁會</option>
+                                                    <option value="86">523 東港/琉球/林邊區漁會</option>
+                                                    <option value="87">524 新港區漁會</option>
+                                                    <option value="88">525 澎湖區漁會</option>
+                                                    <option value="89">603 基隆地區農會</option>
+                                                    <option value="90">605 高雄市農會</option>
+                                                    <option value="91">606 新北市農會</option>
+                                                    <option value="92">607 宜蘭地區農會</option>
+                                                    <option value="93">608 桃園地區農會</option>
+                                                    <option value="94">609 中華民國農會</option>
+                                                    <option value="95">610 新竹地區農會</option>
+                                                    <option value="96">611 後龍農會</option>
+                                                    <option value="97">612 豐原市農會；神岡鄉農會</option>
+                                                    <option value="98">613 名間/集集農會</option>
+                                                    <option value="99">614 彰化地區農會</option>
+                                                    <option value="100">616 雲林地區農會</option>
+                                                    <option value="101">617 嘉義地區農會</option>
+                                                    <option value="102">618 台南地區農會</option>
+                                                    <option value="103">619 高雄地區農會</option>
+                                                    <option value="104">620 屏東地區農會</option>
+                                                    <option value="105">621 花蓮地區農會</option>
+                                                    <option value="106">622 台東地區農會</option>
+                                                    <option value="107">623 台北市農會</option>
+                                                    <option value="108">624 澎湖農會</option>
+                                                    <option value="109">625 台中市農會</option>
+                                                    <option value="110">627 連江縣農會</option>
+                                                    <option value="111">700 中華郵政</option>
+                                                    <option value="112">803 聯邦銀行</option>
+                                                    <option value="113">805 遠東銀行</option>
+                                                    <option value="114">806 元大銀行</option>
+                                                    <option value="115">807 永豐銀行</option>
+                                                    <option value="116">808 玉山銀行</option>
+                                                    <option value="117">809 凱基銀行</option>
+                                                    <option value="118">810 星展銀行</option>
+                                                    <option value="119">812 台新銀行</option>
+                                                    <option value="120">814 大眾銀行</option>
+                                                    <option value="121">815 日盛銀行</option>
+                                                    <option value="122">816 安泰銀行</option>
+                                                    <option value="123">822 中國信託</option>
+                                                    <option value="124">901 大里市農會</option>
+                                                    <option value="125">903 汐止農會</option>
+                                                    <option value="126">904 新莊農會</option>
+                                                    <option value="127">910 聯資中心</option>
+                                                    <option value="128">912 冬山農會</option>
+                                                    <option value="129">916 草屯農會</option>
+                                                    <option value="130">922 臺南農會</option>
+                                                    <option value="132">928 板橋農會</option>
+                                                    <option value="133">951 北農中心</option>
+                                                    <option value="134">952 南部地區農漁會</option>
+                                                    <option value="136">954 中部地區農漁會</option>
+                                                    <option value="137">995 關貿網路</option>
+                                                    <option value="138">996 財政部國庫署</option>
+                                                    <option value="139">997 南資中心</option>
+                                                    <option value="141">510 農金資中心</option>
+                                                    <option value="142">960 台灣樂天</option>
+                                                    <option value="143">975 美國運通</option>
+                                                    <option value="144">978 台灣永旺</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="form-group">
+                                                <label for="allot_bank_ext_1">選擇分行</label>
+                                                <select class="form-control" id="allot_bank_ext_1"
+                                                    name="allot_bank_ext_1" tabindex="-1" aria-hidden="true">
+                                                    <option value="0" selected="selected"></option>
+                                                    <option value="2">0022 國庫局</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-md-3">
+                                        <div class="col-md-4">
+                                            <div class="form-group"> <label for="allot_bank_idname">帳戶名稱</label> <input
+                                                    id="allot_bank_idname" name="allot_bank_idname" type="text"
+                                                    class="form-control"></div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group"> <label for="allot_bank_id">帳戶號碼</label> <input
+                                                    id="allot_bank_id" name="allot_bank_id" type="text"
+                                                    class="form-control"></div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group collapse"> <label>SwiftCode</label> <input
+                                                    id="allot_bank_swift_code" name="allot_bank_swift_code" type="text"
+                                                    class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--說明-->
+                                <div class="col-md-12 mt-1">
+                                    <div class="alert alert-warning">
+                                        <p>本公司及負責人保證所提供之相關資料和證明文件均正確無誤，並授權高鉅科技及其收單銀行得將之提供予財團法人金融聯合徵信中心、聯合信用卡處理中心及財政部指定之機構建檔；且同意高鉅科技及與收單銀行之事業單位，得將本商店(公司及負責人)提供之資料，於法令許可範圍內，作為蒐集、電腦處理、國際傳輸及其他行政或文宣推廣之用途。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-5 d-flex justify-content-center">
+                                    <div class="col-6 col-sm-5 col-md-4 col-lg-3">
+                                        <button type="submit" class="btn btn-mypay btn-lg btn-block">送 出</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--form-company end-->
+
+    <!--form-oneself begin-->
+    <div id="form_oneself" class="container-fluid bg-lightgray collapse">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 pt-md-5 pt-2">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <div class="row p-lg-3">
+                                    <div class="col-md-12">
+                                        <div class="input-group selectbox">
+                                            <!--申請線上支付功能--外送服務才會出現的選項-->
+                                            <div>
+                                                <input type="checkbox" id="line_mypay" name="line_mypay">
+                                                <label for="line_mypay">申請線上支付功能</label>
+                                            </div>
+                                        </div>
+                                        <!--商店基本資料 begin-->
+                                        <div class="titlebar">
+                                            <i class="fas fa-store"></i> 特約商店
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group"><label for="applicant_name">商店名稱</label><input
+                                                        id="zh_tw_name" name="zh_tw_name" type="text"
+                                                        class="form-control"></div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group"> <label>產業類別</label>
+                                                    <select class="form-control">
+                                                        <option selected value="">請選擇MCC碼</option>
+                                                        <option value="0000">0000 房地產租賃</option>
+                                                        <option value="0742">0742 獸醫</option>
+                                                        <option value="0763">0763 農特產</option>
+                                                        <option value="0780">0780 其他</option>
+                                                        <option value="1520">1520 一般建築</option>
+                                                        <option value="1711">1711 水管空調</option>
+                                                        <option value="1731">1731 電氣工程</option>
+                                                        <option value="1740">1740 石造工程</option>
+                                                        <option value="1750">1711 木匠工程</option>
+                                                        <option value="1761">1711 屋頂</option>
+                                                        <option value="1771">1711 室內裝潢、水泥、油漆</option>
+                                                        <option value="1799">1799 房屋仲介</option>
+                                                        <option value="2741">2741 出版印刷業</option>
+                                                        <option value="2842">2842 打掃衛生</option>
+                                                        <option value="...">...</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="form-group"> <label>登記地址</label>
+                                                    <div class="form-inline pb-2">
+                                                        <div class="input-group width_auto">
+                                                            <input id="zip_code" name="zip_code" type="text"
+                                                                class="form-control areacode_ads" placeholder="郵遞區號">
+                                                        </div>
+                                                        <select id="city_code" tag-id="city_code" name="city_code"
+                                                            class="form-control width_auto mx-sm-2">
+                                                            <option selected="selected" value="">縣市</option>
+                                                            <option value="5">基隆市</option>
+                                                            <option value="15">臺北市</option>
+                                                            <option value="9">新北市</option>
+                                                            <option value="12">桃園市</option>
+                                                            <option value="11">新竹縣</option>
+                                                            <option value="10">新竹市</option>
+                                                            <option value="19">苗栗縣</option>
+                                                            <option value="14">臺中市</option>
+                                                            <option value="8">彰化縣</option>
+                                                            <option value="23">雲林縣</option>
+                                                            <option value="4">嘉義縣</option>
+                                                            <option value="3">嘉義市</option>
+                                                            <option value="16">臺南市</option>
+                                                            <option value="24">高雄市</option>
+                                                            <option value="7">屏東縣</option>
+                                                            <option value="17">臺東縣</option>
+                                                            <option value="18">花蓮縣</option>
+                                                            <option value="6">宜蘭縣</option>
+                                                            <option value="13">澎湖縣</option>
+                                                            <option value="1">南投縣</option>
+                                                            <option value="20">連江縣</option>
+                                                            <option value="21">金門縣</option>
+                                                            <option value="22">釣魚臺</option>
+                                                            <option value="2">南海島</option>
+                                                        </select>
+                                                        <select id="district_code" name="district_code"
+                                                            class="form-control width_auto">
+                                                            <option selected="selected" value="">鄉鎮市區</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-group form-group">
+                                                        <input type="text" id="address" name="address" maxlength="80"
+                                                            class="form-control" placeholder="請輸入聯絡地址">
+                                                    </div>
+                                                </div>
+                                                <div class="form-inline pb-3">
+                                                    <div class="pl-2 basic radio radio-warning">
+                                                        <input id="personal-invoice-send-1" type="radio"
+                                                            name="personal-invoice-send"><label
+                                                            for="personal-invoice-send-1">發票寄送此地址 </label>
+                                                    </div>
+                                                    <div class="pl-4 basic checkbox checkbox-success">
+                                                        <input id="personal_really_address_btn"
+                                                            name="personal_really_address_btn" type="checkbox"
+                                                            checked><label for="personal_really_address_btn">同營業地址
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="personal-open-address" class="col-md-12 col-lg-6"
+                                                style="display:none;">
+                                                <div class="form-group"> <label>營業地址</label>
+                                                    <div class="form-inline pb-2">
+                                                        <div class="input-group width_auto">
+                                                            <input type="text" class="form-control areacode_ads"
+                                                                placeholder="郵遞區號">
+                                                        </div>
+                                                        <select id="city_code" tag-id="city_code" name="city_code"
+                                                            class="form-control width_auto mx-sm-2">
+                                                            <option selected="selected" value="">縣市</option>
+                                                            <option value="5">基隆市</option>
+                                                            <option value="15">臺北市</option>
+                                                            <option value="9">新北市</option>
+                                                            <option value="12">桃園市</option>
+                                                            <option value="11">新竹縣</option>
+                                                            <option value="10">新竹市</option>
+                                                            <option value="19">苗栗縣</option>
+                                                            <option value="14">臺中市</option>
+                                                            <option value="8">彰化縣</option>
+                                                            <option value="23">雲林縣</option>
+                                                            <option value="4">嘉義縣</option>
+                                                            <option value="3">嘉義市</option>
+                                                            <option value="16">臺南市</option>
+                                                            <option value="24">高雄市</option>
+                                                            <option value="7">屏東縣</option>
+                                                            <option value="17">臺東縣</option>
+                                                            <option value="18">花蓮縣</option>
+                                                            <option value="6">宜蘭縣</option>
+                                                            <option value="13">澎湖縣</option>
+                                                            <option value="1">南投縣</option>
+                                                            <option value="20">連江縣</option>
+                                                            <option value="21">金門縣</option>
+                                                            <option value="22">釣魚臺</option>
+                                                            <option value="2">南海島</option>
+                                                        </select>
+                                                        <select id="district_code" name="district_code"
+                                                            class="form-control width_auto">
+                                                            <option selected="selected" value="">鄉鎮市區</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-group form-group">
+                                                        <input type="text" id="address" name="address" maxlength="80"
+                                                            class="form-control" placeholder="請輸入聯絡地址">
+                                                    </div>
+                                                </div>
+                                                <div class="pl-1 basic radio radio-warning">
+                                                    <input id="personal-invoice-send-2" type="radio"
+                                                        name="personal-invoice-send" value=""> <label
+                                                        for="personal-invoice-send-2">發票寄送此地址 </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12 mt-3">
+                                                <div class="alert alert-warning">
+                                                    <h6 class="alert-heading"><i class="fas fa-user-tie"></i>
+                                                        公司客服資訊，會顯示於客戶收到之交易通知中</h6>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <div class="form-inline">
+                                                                    <span>客服類型</span>
+                                                                    <div class="basic radio radio-warning ml-2">
+                                                                        <input id="personal_line" type="radio"
+                                                                            name="personal-sv"> <label
+                                                                            for="personal_line">line</label>
+                                                                    </div>
+                                                                    <div class="basic radio radio-warning ml-2">
+                                                                        <input id="personal_tel" type="radio"
+                                                                            name="personal-sv"> <label
+                                                                            for="personal_tel">電話</label>
+                                                                    </div>
+                                                                    <div class="basic radio radio-warning ml-2">
+                                                                        <input id="personal_mobile" type="radio"
+                                                                            name="personal-sv"
+                                                                            placeholder="0988-888888"> <label
+                                                                            for="personal_mobile">手機</label>
+                                                                    </div>
+                                                                </div>
+                                                                <!--選擇後 出現該項目 客服選項 begin-->
+
+                                                                <div id="personal_line_open" class="pt-2"
+                                                                    style="display: none">
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="請輸入line ID">
+                                                                </div>
+
+                                                                <div id="personal_tel_open" class="input-group pt-2"
+                                                                    style="display: none">
+                                                                    <select name="phonearea" class="area">
+                                                                        <option value="886">TW-886</option>
+                                                                        <option value="86">CN-86</option>
+                                                                        <option value="852">HK-852</option>
+                                                                        <option value="853">MO-853</option>
+                                                                        <option value="84">VN-84</option>
+                                                                        <option value="65">SG-65</option>
+                                                                        <option value="60">MY-60</option>
+                                                                        <option value="66">TH-66</option>
+                                                                        <option value="1">US-1</option>
+                                                                        <option value="1">CA-1</option>
+                                                                        <option value="81">JP-81</option>
+                                                                        <option value="44">UK-44</option>
+                                                                        <option value="61">AU-61</option>
+                                                                        <option value="64">NZ-64</option>
+                                                                    </select>
+                                                                    <input id="service_phone" name="service_phone"
+                                                                        type="text" class="form-control"
+                                                                        placeholder="02-27208889">
+                                                                </div>
+
+                                                                <div id="personal_mobile_open" class="input-group pt-2"
+                                                                    style="display: none">
+                                                                    <select class="area" name="phone_code" id="">
+                                                                        <option value="886">TW-886</option>
+                                                                        <option value="86">CN-86</option>
+                                                                        <option value="852">HK-852</option>
+                                                                        <option value="853">MO-853</option>
+                                                                        <option value="84">VN-84</option>
+                                                                        <option value="65">SG-65</option>
+                                                                        <option value="60">MY-60</option>
+                                                                        <option value="66">TH-66</option>
+                                                                        <option value="1">US-1</option>
+                                                                        <option value="1">CA-1</option>
+                                                                        <option value="81">JP-81</option>
+                                                                        <option value="44">UK-44</option>
+                                                                        <option value="61">AU-61</option>
+                                                                        <option value="64">NZ-64</option>
+                                                                    </select>
+                                                                    <input id="service_phone2" name="service_phone2"
+                                                                        type="text" class="form-control"
+                                                                        placeholder="0988-888888">
+                                                                </div>
+                                                                <!--客服選項 end-->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group"> <label for="service_mail">客服
+                                                                    E-mail</label> <input id="service_mail"
+                                                                    name="service_mail" type="text"
+                                                                    class="form-control"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="alert alert-warning">
+                                                    <h6 class="alert-heading"><i class="fas fa-credit-card"></i>
+                                                        信用卡交易之顯示名稱<small class="pl-2">* 中英文10字元內，發送驗證簡訊使用</small></h6>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group"> <label
+                                                                    for="zh_tw_name">國內交易名稱(中、英文不拘)</label> <input
+                                                                    id="zh_tw_name" name="zh_tw_name" type="text"
+                                                                    class="form-control" maxlength="10"></div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group"> <label
+                                                                    for="en_us_name">國外交易名稱(英文)</label> <input
+                                                                    id="en_us_name" name="en_us_name" type="text"
+                                                                    class="form-control" maxlength="10">
+                                                                <small> * 提供收單銀行存查使用</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--商店基本資料 end-->
+                                    </div>
+
+                                    <!-- 申請人資料 begin-->
+                                    <div class="col-md-12 ">
+                                        <div class="titlebar">
+                                            <i class="fas fa-user"></i> 申請人
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group"> <label for="principal_name">姓名</label> <input
+                                                        id="applicant_name" name="applicant_name" type="text"
+                                                        class="form-control" required="" placeholder=""></div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group"> <label for="">出生日期(西元)</label>
+                                                    <div class="form-inline">
+                                                        <!-- <input type="number" id="year_personalBD" placeholder="2019" class="form-control  width_short" min="1919" max="2019"> -->
+                                                        <select id="mon_personalBD" class="form-control width_auto">
+                                                            <option value="18">2001</option>
+                                                            <option value="19">2000</option>
+                                                            <option value="20">1999</option>
+                                                            <option value="21">1998</option>
+                                                            <option value="22">1997</option>
+                                                            <option value="23">1996</option>
+                                                            <option value="24">1995</option>
+                                                            <option value="25">1994</option>
+                                                            <option value="26">1993</option>
+                                                            <option value="27">1992</option>
+                                                            <option value="28">1991</option>
+                                                            <option value="29">1990</option>
+                                                            <option value="30">1989</option>
+                                                            <option value="31">1988</option>
+                                                            <option value="32">1987</option>
+                                                            <option value="33">1986</option>
+                                                            <option value="34">1985</option>
+                                                            <option value="35">1984</option>
+                                                            <option value="36">1983</option>
+                                                            <option value="37">1982</option>
+                                                            <option value="38">1981</option>
+                                                            <option value="39">1980</option>
+                                                            <option value="40">1979</option>
+                                                            <option value="41">1978</option>
+                                                            <option value="42">1977</option>
+                                                            <option value="43">1976</option>
+                                                            <option value="44">1975</option>
+                                                            <option value="45">1974</option>
+                                                            <option value="46">1973</option>
+                                                            <option value="47">1972</option>
+                                                            <option value="48">1971</option>
+                                                            <option value="49">1970</option>
+                                                            <option value="50">1969</option>
+                                                            <option value="51">1968</option>
+                                                            <option value="52">1967</option>
+                                                            <option value="53">1966</option>
+                                                            <option value="54">1965</option>
+                                                            <option value="55">1964</option>
+                                                            <option value="56">1963</option>
+                                                            <option value="57">1962</option>
+                                                            <option value="58">1961</option>
+                                                            <option value="59">1960</option>
+                                                            <option value="60">1959</option>
+                                                            <option value="61">1958</option>
+                                                            <option value="62">1957</option>
+                                                            <option value="63">1956</option>
+                                                            <option value="64">1955</option>
+                                                            <option value="65">1954</option>
+                                                            <option value="66">1953</option>
+                                                            <option value="67">1952</option>
+                                                            <option value="68">1951</option>
+                                                            <option value="69">1950</option>
+                                                        </select>
+                                                        <label class="mx-2" for="year_personalBD">年</label>
+                                                        <select id="mon_personalBD" class="form-control width_auto">
+                                                            <option value="01">01</option>
+                                                            <option value="02">02</option>
+                                                            <option value="03">03</option>
+                                                            <option value="04">04</option>
+                                                            <option value="05">05</option>
+                                                            <option value="06">06</option>
+                                                            <option value="07">07</option>
+                                                            <option value="08">08</option>
+                                                            <option value="09">09</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                        </select>
+                                                        <label class="mx-2" for="mon_personalBD">月</label>
+                                                        <select id="date" class="form-control width_auto mr-2">
+                                                            <option value="01">01</option>
+                                                            <option value="02">02</option>
+                                                            <option value="03">03</option>
+                                                            <option value="04">04</option>
+                                                            <option value="05">05</option>
+                                                            <option value="06">06</option>
+                                                            <option value="07">07</option>
+                                                            <option value="08">08</option>
+                                                            <option value="09">09</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                            <option value="13">13</option>
+                                                            <option value="14">14</option>
+                                                            <option value="15">15</option>
+                                                            <option value="16">16</option>
+                                                            <option value="17">17</option>
+                                                            <option value="18">18</option>
+                                                            <option value="19">19</option>
+                                                            <option value="20">20</option>
+                                                            <option value="21">21</option>
+                                                            <option value="22">22</option>
+                                                            <option value="23">23</option>
+                                                            <option value="24">24</option>
+                                                            <option value="25">25</option>
+                                                            <option value="26">26</option>
+                                                            <option value="27">27</option>
+                                                            <option value="28">28</option>
+                                                            <option value="29">29</option>
+                                                            <option value="30">30</option>
+                                                            <option value="31">31</option>
+                                                        </select>
+                                                        <label for="date">日</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group"> <label for="principal_id">身分證字號</label> <input
+                                                        id="applicant_id" name="applicant_id" type="text"
+                                                        class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="">聯絡電話</label>
+                                                    <div class="input-group">
+                                                        <select name="phonearea" class="area"
+                                                            id="principal_phone_code_v">
+                                                            <option value="886">TW-886</option>
+                                                            <option value="86">CN-86</option>
+                                                            <option value="852">HK-852</option>
+                                                            <option value="853">MO-853</option>
+                                                            <option value="84">VN-84</option>
+                                                            <option value="65">SG-65</option>
+                                                            <option value="60">MY-60</option>
+                                                            <option value="66">TH-66</option>
+                                                            <option value="1">US-1</option>
+                                                            <option value="1">CA-1</option>
+                                                            <option value="81">JP-81</option>
+                                                            <option value="44">UK-44</option>
+                                                            <option value="61">AU-61</option>
+                                                            <option value="64">NZ-64</option>
+                                                        </select>
+                                                        <input type="tel" id="principal_phone" name="principal_phone"
+                                                            class="form-control" placeholder="02-27208889">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="">行動電話</label>
+                                                    <div class="input-group">
+                                                        <select class="area" name="phone_code"
+                                                            id="principal_cellphone_code_v">
+                                                            <option value="886">TW-886</option>
+                                                            <option value="86">CN-86</option>
+                                                            <option value="852">HK-852</option>
+                                                            <option value="853">MO-853</option>
+                                                            <option value="84">VN-84</option>
+                                                            <option value="65">SG-65</option>
+                                                            <option value="60">MY-60</option>
+                                                            <option value="66">TH-66</option>
+                                                            <option value="1">US-1</option>
+                                                            <option value="1">CA-1</option>
+                                                            <option value="81">JP-81</option>
+                                                            <option value="44">UK-44</option>
+                                                            <option value="61">AU-61</option>
+                                                            <option value="64">NZ-64</option>
+                                                        </select>
+                                                        <input type="tel" id="principal_cellphone"
+                                                            name="principal_cellphone" class="form-control"
+                                                            placeholder="0988-888888">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group"> <label for="principal_email">E-mail</label>
+                                                    <input id="principal_email" name="principal_email" type="text"
+                                                        class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="form-group"> <label>戶藉地址</label>
+                                                    <div class="form-inline pb-2">
+                                                        <div class="input-group width_auto">
+                                                            <input id="principal_zip_code" name="principal_zip_code"
+                                                                type="text" class="form-control areacode_ads"
+                                                                placeholder="郵遞區號">
+                                                        </div>
+                                                        <select id="principal_city_code" tag-id="city_code"
+                                                            name="principal_city_code"
+                                                            class="form-control width_auto mx-md-2">
+                                                            <option selected="selected" value="">縣市</option>
+                                                            <option value="5">基隆市</option>
+                                                            <option value="15">臺北市</option>
+                                                            <option value="9">新北市</option>
+                                                            <option value="12">桃園市</option>
+                                                            <option value="11">新竹縣</option>
+                                                            <option value="10">新竹市</option>
+                                                            <option value="19">苗栗縣</option>
+                                                            <option value="14">臺中市</option>
+                                                            <option value="8">彰化縣</option>
+                                                            <option value="23">雲林縣</option>
+                                                            <option value="4">嘉義縣</option>
+                                                            <option value="3">嘉義市</option>
+                                                            <option value="16">臺南市</option>
+                                                            <option value="24">高雄市</option>
+                                                            <option value="7">屏東縣</option>
+                                                            <option value="17">臺東縣</option>
+                                                            <option value="18">花蓮縣</option>
+                                                            <option value="6">宜蘭縣</option>
+                                                            <option value="13">澎湖縣</option>
+                                                            <option value="1">南投縣</option>
+                                                            <option value="20">連江縣</option>
+                                                            <option value="21">金門縣</option>
+                                                            <option value="22">釣魚臺</option>
+                                                            <option value="2">南海島</option>
+                                                        </select>
+                                                        <select id="principal_district_code"
+                                                            name="principal_district_code"
+                                                            class="form-control width_auto">
+                                                            <option selected="selected" value="">鄉鎮市區</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-group form-group">
+                                                        <input id="principal_address" name="principal_address"
+                                                            type="text" maxlength="80" class="form-control"
+                                                            placeholder="請輸入戶藉地址">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 申請人資料 end-->
+
+                                </div>
+
+                                <!--上傳檔案begin-->
+                                <div class="col-md-12">
+                                    <div class="titlebar">
+                                        <i class="far fa-file-image"></i> 文件上傳
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="wrap_table_r">
+                                                <div class="c_table">
+                                                    <div class="c_tr header">
+                                                        <div class="c_td">
+                                                            文件名稱
+                                                        </div>
+                                                        <div class="c_td">
+                                                            檔案類型：.jpg .jpeg .pdf .png
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            負責人身分證正面
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'>上傳檔案顯示區</div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            負責人身分證反面
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'></div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            負責人第二證件(有照片之駕照、健保卡(擇一))
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'></div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            營業照片4張(包含地址、店名)
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'></div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png" multiple>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            銀行存摺封面影本
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'></div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            其他
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'></div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_tr">
+                                                        <div class="c_td">
+                                                            其他
+                                                        </div>
+                                                        <div class="c_td">
+                                                            <label class="uploadbutton">
+                                                                <div class="button"><i class="fas fa-file-upload"></i>
+                                                                    上傳檔案</div>
+                                                                <div class='input-file-text'></div>
+                                                                <input class="input-file" type="file"
+                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                            </label>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--上傳檔案end-->
+                                <div class="col-md-12">
+                                    <div class="titlebar">
+                                        <i class="far fa-file-image"></i> 撥款帳戶
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 col-md-3">
+                                            <div class="form-group">
+                                                <label for="allot_bank_country">國別</label>
+                                                <select id="allot_bank_country" name="allot_bank_country"
+                                                    class="form-control">
+                                                    <option selected value=""></option>
+                                                    <option value="">中華民國</option>
+                                                    <option value="">香港</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="form-group">
+                                                <label for="allot_bank_currency">幣別</label>
+                                                <select id="allot_bank_currency" name="allot_bank_currency"
+                                                    class="form-control">
+                                                    <option selected value=""></option>
+                                                    <option value="NTD">台幣</option>
+                                                    <option value="USD">美元</option>
+                                                    <option value="CNY">人民幣</option>
+                                                    <option value="HKD">港幣</option>
+                                                    <option value="JPY">日圓</option>
+                                                    <option value="EUR">歐元</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="form-group">
+                                                <label for="allot_bank_name_2">選擇銀行</label>
+                                                <select class="form-control" id="allot_bank_name_2"
+                                                    name="allot_bank_name_2" tabindex="-1" aria-hidden="true">
+                                                    <option selected value=""></option>
+                                                    <option value="1">000 中央銀行</option>
+                                                    <option value="2">004 臺灣銀行</option>
+                                                    <option value="3">005 土地銀行</option>
+                                                    <option value="4">006 合作金庫</option>
+                                                    <option value="5">007 第一銀行</option>
+                                                    <option value="6">008 華南銀行</option>
+                                                    <option value="7">009 彰化銀行</option>
+                                                    <option value="8">011 上海銀行</option>
+                                                    <option value="9">012 台北富邦</option>
+                                                    <option value="10">013 國泰世華</option>
+                                                    <option value="11">016 高雄銀行</option>
+                                                    <option value="12">017 兆豐銀行</option>
+                                                    <option value="13">018 農業金庫</option>
+                                                    <option value="14">020 日商瑞穗銀行</option>
+                                                    <option value="15">021 花旗銀行</option>
+                                                    <option value="16">022 美國銀行</option>
+                                                    <option value="17">023 盤谷銀行</option>
+                                                    <option value="18">025 首都銀行</option>
+                                                    <option value="19">029 新加坡大華銀行</option>
+                                                    <option value="20">030 美商道富銀行</option>
+                                                    <option value="21">039 澳盛銀行</option>
+                                                    <option value="22">048 王道銀行</option>
+                                                    <option value="23">050 臺灣企銀</option>
+                                                    <option value="24">052 渣打銀行</option>
+                                                    <option value="25">053 台中銀行</option>
+                                                    <option value="26">054 京城銀行</option>
+                                                    <option value="27">060 兆豐票券</option>
+                                                    <option value="28">061 中華票券</option>
+                                                    <option value="29">062 國際票券</option>
+                                                    <option value="30">066 萬通票券</option>
+                                                    <option value="31">072 德意志銀行</option>
+                                                    <option value="32">075 東亞銀行</option>
+                                                    <option value="33">076 摩根大通銀行</option>
+                                                    <option value="34">081 滙豐銀行</option>
+                                                    <option value="35">082 巴黎銀行</option>
+                                                    <option value="36">085 新加坡華僑銀行</option>
+                                                    <option value="37">086 東方匯理銀行</option>
+                                                    <option value="38">092 瑞士銀行</option>
+                                                    <option value="39">093 安智銀行</option>
+                                                    <option value="40">098 三菱東京日聯銀行</option>
+                                                    <option value="41">101 瑞興銀行</option>
+                                                    <option value="42">102 華泰銀行</option>
+                                                    <option value="43">103 新光銀行</option>
+                                                    <option value="44">104 台北五信</option>
+                                                    <option value="45">108 陽信銀行</option>
+                                                    <option value="46">114 基隆一信</option>
+                                                    <option value="47">115 基隆二信</option>
+                                                    <option value="48">118 板信銀行</option>
+                                                    <option value="49">119 淡水一信</option>
+                                                    <option value="50">120 淡水信合社</option>
+                                                    <option value="51">124 宜蘭信合社</option>
+                                                    <option value="52">127 桃園信合社</option>
+                                                    <option value="53">130 新竹一信</option>
+                                                    <option value="54">132 新竹三信</option>
+                                                    <option value="55">146 台中二信</option>
+                                                    <option value="56">147 三信銀行</option>
+                                                    <option value="57">158 彰化一信</option>
+                                                    <option value="58">161 彰化五信</option>
+                                                    <option value="59">162 彰化六信</option>
+                                                    <option value="60">163 彰化十信</option>
+                                                    <option value="61">165 鹿港信合社</option>
+                                                    <option value="62">178 嘉義三信</option>
+                                                    <option value="63">188 台南三信</option>
+                                                    <option value="64">204 高雄三信</option>
+                                                    <option value="65">215 花蓮一信</option>
+                                                    <option value="66">216 花蓮二信</option>
+                                                    <option value="67">222 澎湖一信</option>
+                                                    <option value="68">223 澎湖二信</option>
+                                                    <option value="69">224 金門信合社</option>
+                                                    <option value="70">321 三井住友銀行</option>
+                                                    <option value="71">372 大慶票券</option>
+                                                    <option value="72">380 中國銀行</option>
+                                                    <option value="73">381 交通銀行</option>
+                                                    <option value="74">382 中國建設銀行</option>
+                                                    <option value="75">503 基隆漁會</option>
+                                                    <option value="76">504 瑞芳/萬里漁會</option>
+                                                    <option value="77">505 頭城/蘇澳漁會</option>
+                                                    <option value="78">506 桃園漁會</option>
+                                                    <option value="79">507 新竹漁會</option>
+                                                    <option value="80">512 雲林區漁會</option>
+                                                    <option value="81">515 嘉義區漁會</option>
+                                                    <option value="82">517 南市區漁會</option>
+                                                    <option value="83">518 南縣區漁會</option>
+                                                    <option value="84">520 小港區漁會；高雄區漁會</option>
+                                                    <option value="85">521 彌陀/永安/興達港/林園區漁會</option>
+                                                    <option value="86">523 東港/琉球/林邊區漁會</option>
+                                                    <option value="87">524 新港區漁會</option>
+                                                    <option value="88">525 澎湖區漁會</option>
+                                                    <option value="89">603 基隆地區農會</option>
+                                                    <option value="90">605 高雄市農會</option>
+                                                    <option value="91">606 新北市農會</option>
+                                                    <option value="92">607 宜蘭地區農會</option>
+                                                    <option value="93">608 桃園地區農會</option>
+                                                    <option value="94">609 中華民國農會</option>
+                                                    <option value="95">610 新竹地區農會</option>
+                                                    <option value="96">611 後龍農會</option>
+                                                    <option value="97">612 豐原市農會；神岡鄉農會</option>
+                                                    <option value="98">613 名間/集集農會</option>
+                                                    <option value="99">614 彰化地區農會</option>
+                                                    <option value="100">616 雲林地區農會</option>
+                                                    <option value="101">617 嘉義地區農會</option>
+                                                    <option value="102">618 台南地區農會</option>
+                                                    <option value="103">619 高雄地區農會</option>
+                                                    <option value="104">620 屏東地區農會</option>
+                                                    <option value="105">621 花蓮地區農會</option>
+                                                    <option value="106">622 台東地區農會</option>
+                                                    <option value="107">623 台北市農會</option>
+                                                    <option value="108">624 澎湖農會</option>
+                                                    <option value="109">625 台中市農會</option>
+                                                    <option value="110">627 連江縣農會</option>
+                                                    <option value="111">700 中華郵政</option>
+                                                    <option value="112">803 聯邦銀行</option>
+                                                    <option value="113">805 遠東銀行</option>
+                                                    <option value="114">806 元大銀行</option>
+                                                    <option value="115">807 永豐銀行</option>
+                                                    <option value="116">808 玉山銀行</option>
+                                                    <option value="117">809 凱基銀行</option>
+                                                    <option value="118">810 星展銀行</option>
+                                                    <option value="119">812 台新銀行</option>
+                                                    <option value="120">814 大眾銀行</option>
+                                                    <option value="121">815 日盛銀行</option>
+                                                    <option value="122">816 安泰銀行</option>
+                                                    <option value="123">822 中國信託</option>
+                                                    <option value="124">901 大里市農會</option>
+                                                    <option value="125">903 汐止農會</option>
+                                                    <option value="126">904 新莊農會</option>
+                                                    <option value="127">910 聯資中心</option>
+                                                    <option value="128">912 冬山農會</option>
+                                                    <option value="129">916 草屯農會</option>
+                                                    <option value="130">922 臺南農會</option>
+                                                    <option value="132">928 板橋農會</option>
+                                                    <option value="133">951 北農中心</option>
+                                                    <option value="134">952 南部地區農漁會</option>
+                                                    <option value="136">954 中部地區農漁會</option>
+                                                    <option value="137">995 關貿網路</option>
+                                                    <option value="138">996 財政部國庫署</option>
+                                                    <option value="139">997 南資中心</option>
+                                                    <option value="141">510 農金資中心</option>
+                                                    <option value="142">960 台灣樂天</option>
+                                                    <option value="143">975 美國運通</option>
+                                                    <option value="144">978 台灣永旺</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="form-group">
+                                                <label for="allot_bank_ext_2">選擇分行</label>
+                                                <select class="form-control" id="allot_bank_ext_2"
+                                                    name="allot_bank_ext_2" tabindex="-1" aria-hidden="true">
+                                                    <option value="0" selected="selected"></option>
+                                                    <option value="2">0022 國庫局</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-md-3">
+                                        <div class="col-md-4">
+                                            <div class="form-group"> <label for="allot_bank_idname">帳戶名稱</label> <input
+                                                    id="allot_bank_idname" name="allot_bank_idname" type="text"
+                                                    class="form-control"></div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group"> <label for="allot_bank_id">帳戶號碼</label> <input
+                                                    id="allot_bank_id" name="allot_bank_id" type="text"
+                                                    class="form-control"></div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group collapse"> <label>SwiftCode</label> <input
+                                                    id="allot_bank_swift_code" name="allot_bank_swift_code" type="text"
+                                                    class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--說明-->
+                                <div class="col-md-12 mt-1 ">
+                                    <div class="alert alert-warning">
+                                        <p>本公司及負責人保證所提供之相關資料和證明文件均正確無誤，並授權高鉅科技及其收單銀行得將之提供予財團法人金融聯合徵信中心、聯合信用卡處理中心及財政部指定之機構建檔；且同意高鉅科技及與收單銀行之事業單位，得將本商店(公司及負責人)提供之資料，於法令許可範圍內，作為蒐集、電腦處理、國際傳輸及其他行政或文宣推廣之用途。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-5 d-flex justify-content-center">
+                                    <div class="col-6 col-sm-5 col-md-4 col-lg-3">
+                                        <button type="submit" class="btn btn-mypay btn-lg btn-block">送 出</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--form-oneself end-->
+    <footer>
+        <p>© 2019 ooo ooo Co.,Ltd.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js "
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js "
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm "
+        crossorigin="anonymous "></script>
+    <script src="./js/store.js"></script>
+
+</body>
+
+</html>
