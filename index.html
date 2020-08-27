@@ -15,19 +15,19 @@
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
         integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="./js/jquery-editable-select/jquery-editable-select.css"> -->
     <link rel="stylesheet" href="./css/storedate.css">
 </head>
 
 <body>
-    <div class="container-fluid nav-top">
+    <div class="w-100 nav-top">
         <nav class="container">
-            <div class="row col">
-                <a href="https://www.mypay.com.tw" target="_black"><img src="./images/logo_LIBBY.png" alt=""></a>
+            <div class="row">
+                <div class="col text-sm-left text-center">
+                <a href="#" target="_black"><img src="./images/logo_LIBBY.png" alt=""></a>
+                </div>
             </div>
         </nav>
     </div>
-    <!-- <div class="container-fluid"> -->
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -65,9 +65,8 @@
         </div>
     </div>
 
-    <!-- </div> -->
     <!--form-company begin-->
-    <div id="form_company" class="container-fluid bg-lightgray">
+    <div id="form_company" class="container-flui.bg-lightgray">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 pt-md-5 pt-2">
@@ -893,369 +892,371 @@
                                 </div>
 
                                 <!--上傳檔案begin-->
-                                <div class="col-md-12">
-                                    <div class="titlebar">
-                                        <i class="far fa-file-image"></i> 文件上傳
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="wrap_table_r">
-                                                <div class="c_table">
-                                                    <div class="c_tr header">
-                                                        <div class="c_td">
-                                                            文件名稱
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="titlebar">
+                                            <i class="far fa-file-image"></i> 文件上傳
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="wrap_table_r">
+                                                    <div class="c_table">
+                                                        <div class="c_tr header">
+                                                            <div class="c_td">
+                                                                文件名稱
+                                                            </div>
+                                                            <div class="c_td">
+                                                                檔案類型：.jpg .jpeg .pdf .png
+                                                            </div>
                                                         </div>
-                                                        <div class="c_td">
-                                                            檔案類型：.jpg .jpeg .pdf .png
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                負責人身分證正面
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'>上傳的檔案放這裡</div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            負責人身分證正面
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                負責人身分證反面
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'></div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'>上傳的檔案放這裡</div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
-                                                            </label>
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                負責人第二證件(有照片之駕照、健保卡(擇一))
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'></div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            負責人身分證反面
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                變更事項登記表、核準函(檔案類型：pdf)
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'></div>
+                                                                    <input class="input-file" type="file" accept=".pdf ">
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'></div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
-                                                            </label>
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                近二期401報表 或 404報表
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'></div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png " multiple>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            負責人第二證件(有照片之駕照、健保卡(擇一))
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                營業照片4張(包含地址、店名)
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'></div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png " multiple>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'></div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
-                                                            </label>
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                銀行存摺封面
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'></div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png">
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            變更事項登記表、核準函(檔案類型：pdf)
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                其他
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'></div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png">
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'></div>
-                                                                <input class="input-file" type="file" accept=".pdf ">
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            近二期401報表 或 404報表
-                                                        </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'></div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png " multiple>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            營業照片4張(包含地址、店名)
-                                                        </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'></div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png " multiple>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            銀行存摺封面
-                                                        </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'></div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png">
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            其他
-                                                        </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'></div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png">
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            其他
-                                                        </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'></div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
-                                                            </label>
-                                                        </div>
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                其他
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'></div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                                </label>
+                                                            </div>
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!--上傳檔案end-->
-                                <div class="col-md-12">
-                                    <div class="titlebar">
-                                        <i class="far fa-file-image"></i> 撥款帳戶
+                                    <!--上傳檔案end-->
+                                    <div class="col-md-12">
+                                        <div class="titlebar">
+                                            <i class="far fa-file-image"></i> 撥款帳戶
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="allot_bank_country">國別</label>
+                                                    <select id="allot_bank_country" name="allot_bank_country"
+                                                        class="form-control">
+                                                        <option selected value=""></option>
+                                                        <option value="">中華民國</option>
+                                                        <option value="">香港</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="allot_bank_currency">幣別</label>
+                                                    <select id="allot_bank_currency" name="allot_bank_currency"
+                                                        class="form-control">
+                                                        <option selected value=""></option>
+                                                        <option value="NTD">台幣</option>
+                                                        <option value="USD">美元</option>
+                                                        <option value="CNY">人民幣</option>
+                                                        <option value="HKD">港幣</option>
+                                                        <option value="JPY">日圓</option>
+                                                        <option value="EUR">歐元</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="allot_bank_name_1">選擇銀行</label>
+                                                    <select class="form-control" id="allot_bank_name_1"
+                                                        name="allot_bank_name_1" tabindex="-1" aria-hidden="true">
+                                                        <option selected value=""></option>
+                                                        <option value="1">000 中央銀行</option>
+                                                        <option value="2">004 臺灣銀行</option>
+                                                        <option value="3">005 土地銀行</option>
+                                                        <option value="4">006 合作金庫</option>
+                                                        <option value="5">007 第一銀行</option>
+                                                        <option value="6">008 華南銀行</option>
+                                                        <option value="7">009 彰化銀行</option>
+                                                        <option value="8">011 上海銀行</option>
+                                                        <option value="9">012 台北富邦</option>
+                                                        <option value="10">013 國泰世華</option>
+                                                        <option value="11">016 高雄銀行</option>
+                                                        <option value="12">017 兆豐銀行</option>
+                                                        <option value="13">018 農業金庫</option>
+                                                        <option value="14">020 日商瑞穗銀行</option>
+                                                        <option value="15">021 花旗銀行</option>
+                                                        <option value="16">022 美國銀行</option>
+                                                        <option value="17">023 盤谷銀行</option>
+                                                        <option value="18">025 首都銀行</option>
+                                                        <option value="19">029 新加坡大華銀行</option>
+                                                        <option value="20">030 美商道富銀行</option>
+                                                        <option value="21">039 澳盛銀行</option>
+                                                        <option value="22">048 王道銀行</option>
+                                                        <option value="23">050 臺灣企銀</option>
+                                                        <option value="24">052 渣打銀行</option>
+                                                        <option value="25">053 台中銀行</option>
+                                                        <option value="26">054 京城銀行</option>
+                                                        <option value="27">060 兆豐票券</option>
+                                                        <option value="28">061 中華票券</option>
+                                                        <option value="29">062 國際票券</option>
+                                                        <option value="30">066 萬通票券</option>
+                                                        <option value="31">072 德意志銀行</option>
+                                                        <option value="32">075 東亞銀行</option>
+                                                        <option value="33">076 摩根大通銀行</option>
+                                                        <option value="34">081 滙豐銀行</option>
+                                                        <option value="35">082 巴黎銀行</option>
+                                                        <option value="36">085 新加坡華僑銀行</option>
+                                                        <option value="37">086 東方匯理銀行</option>
+                                                        <option value="38">092 瑞士銀行</option>
+                                                        <option value="39">093 安智銀行</option>
+                                                        <option value="40">098 三菱東京日聯銀行</option>
+                                                        <option value="41">101 瑞興銀行</option>
+                                                        <option value="42">102 華泰銀行</option>
+                                                        <option value="43">103 新光銀行</option>
+                                                        <option value="44">104 台北五信</option>
+                                                        <option value="45">108 陽信銀行</option>
+                                                        <option value="46">114 基隆一信</option>
+                                                        <option value="47">115 基隆二信</option>
+                                                        <option value="48">118 板信銀行</option>
+                                                        <option value="49">119 淡水一信</option>
+                                                        <option value="50">120 淡水信合社</option>
+                                                        <option value="51">124 宜蘭信合社</option>
+                                                        <option value="52">127 桃園信合社</option>
+                                                        <option value="53">130 新竹一信</option>
+                                                        <option value="54">132 新竹三信</option>
+                                                        <option value="55">146 台中二信</option>
+                                                        <option value="56">147 三信銀行</option>
+                                                        <option value="57">158 彰化一信</option>
+                                                        <option value="58">161 彰化五信</option>
+                                                        <option value="59">162 彰化六信</option>
+                                                        <option value="60">163 彰化十信</option>
+                                                        <option value="61">165 鹿港信合社</option>
+                                                        <option value="62">178 嘉義三信</option>
+                                                        <option value="63">188 台南三信</option>
+                                                        <option value="64">204 高雄三信</option>
+                                                        <option value="65">215 花蓮一信</option>
+                                                        <option value="66">216 花蓮二信</option>
+                                                        <option value="67">222 澎湖一信</option>
+                                                        <option value="68">223 澎湖二信</option>
+                                                        <option value="69">224 金門信合社</option>
+                                                        <option value="70">321 三井住友銀行</option>
+                                                        <option value="71">372 大慶票券</option>
+                                                        <option value="72">380 中國銀行</option>
+                                                        <option value="73">381 交通銀行</option>
+                                                        <option value="74">382 中國建設銀行</option>
+                                                        <option value="75">503 基隆漁會</option>
+                                                        <option value="76">504 瑞芳/萬里漁會</option>
+                                                        <option value="77">505 頭城/蘇澳漁會</option>
+                                                        <option value="78">506 桃園漁會</option>
+                                                        <option value="79">507 新竹漁會</option>
+                                                        <option value="80">512 雲林區漁會</option>
+                                                        <option value="81">515 嘉義區漁會</option>
+                                                        <option value="82">517 南市區漁會</option>
+                                                        <option value="83">518 南縣區漁會</option>
+                                                        <option value="84">520 小港區漁會；高雄區漁會</option>
+                                                        <option value="85">521 彌陀/永安/興達港/林園區漁會</option>
+                                                        <option value="86">523 東港/琉球/林邊區漁會</option>
+                                                        <option value="87">524 新港區漁會</option>
+                                                        <option value="88">525 澎湖區漁會</option>
+                                                        <option value="89">603 基隆地區農會</option>
+                                                        <option value="90">605 高雄市農會</option>
+                                                        <option value="91">606 新北市農會</option>
+                                                        <option value="92">607 宜蘭地區農會</option>
+                                                        <option value="93">608 桃園地區農會</option>
+                                                        <option value="94">609 中華民國農會</option>
+                                                        <option value="95">610 新竹地區農會</option>
+                                                        <option value="96">611 後龍農會</option>
+                                                        <option value="97">612 豐原市農會；神岡鄉農會</option>
+                                                        <option value="98">613 名間/集集農會</option>
+                                                        <option value="99">614 彰化地區農會</option>
+                                                        <option value="100">616 雲林地區農會</option>
+                                                        <option value="101">617 嘉義地區農會</option>
+                                                        <option value="102">618 台南地區農會</option>
+                                                        <option value="103">619 高雄地區農會</option>
+                                                        <option value="104">620 屏東地區農會</option>
+                                                        <option value="105">621 花蓮地區農會</option>
+                                                        <option value="106">622 台東地區農會</option>
+                                                        <option value="107">623 台北市農會</option>
+                                                        <option value="108">624 澎湖農會</option>
+                                                        <option value="109">625 台中市農會</option>
+                                                        <option value="110">627 連江縣農會</option>
+                                                        <option value="111">700 中華郵政</option>
+                                                        <option value="112">803 聯邦銀行</option>
+                                                        <option value="113">805 遠東銀行</option>
+                                                        <option value="114">806 元大銀行</option>
+                                                        <option value="115">807 永豐銀行</option>
+                                                        <option value="116">808 玉山銀行</option>
+                                                        <option value="117">809 凱基銀行</option>
+                                                        <option value="118">810 星展銀行</option>
+                                                        <option value="119">812 台新銀行</option>
+                                                        <option value="120">814 大眾銀行</option>
+                                                        <option value="121">815 日盛銀行</option>
+                                                        <option value="122">816 安泰銀行</option>
+                                                        <option value="123">822 中國信託</option>
+                                                        <option value="124">901 大里市農會</option>
+                                                        <option value="125">903 汐止農會</option>
+                                                        <option value="126">904 新莊農會</option>
+                                                        <option value="127">910 聯資中心</option>
+                                                        <option value="128">912 冬山農會</option>
+                                                        <option value="129">916 草屯農會</option>
+                                                        <option value="130">922 臺南農會</option>
+                                                        <option value="132">928 板橋農會</option>
+                                                        <option value="133">951 北農中心</option>
+                                                        <option value="134">952 南部地區農漁會</option>
+                                                        <option value="136">954 中部地區農漁會</option>
+                                                        <option value="137">995 關貿網路</option>
+                                                        <option value="138">996 財政部國庫署</option>
+                                                        <option value="139">997 南資中心</option>
+                                                        <option value="141">510 農金資中心</option>
+                                                        <option value="142">960 台灣樂天</option>
+                                                        <option value="143">975 美國運通</option>
+                                                        <option value="144">978 台灣永旺</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="allot_bank_ext_1">選擇分行</label>
+                                                    <select class="form-control" id="allot_bank_ext_1"
+                                                        name="allot_bank_ext_1" tabindex="-1" aria-hidden="true">
+                                                        <option value="0" selected="selected"></option>
+                                                        <option value="2">0022 國庫局</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-md-3">
+                                            <div class="col-md-4">
+                                                <div class="form-group"> <label for="allot_bank_idname">帳戶名稱</label> <input
+                                                        id="allot_bank_idname" name="allot_bank_idname" type="text"
+                                                        class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group"> <label for="allot_bank_id">帳戶號碼</label> <input
+                                                        id="allot_bank_id" name="allot_bank_id" type="text"
+                                                        class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group collapse"> <label>SwiftCode</label> <input
+                                                        id="allot_bank_swift_code" name="allot_bank_swift_code" type="text"
+                                                        class="form-control"></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-6 col-md-3">
-                                            <div class="form-group">
-                                                <label for="allot_bank_country">國別</label>
-                                                <select id="allot_bank_country" name="allot_bank_country"
-                                                    class="form-control">
-                                                    <option selected value=""></option>
-                                                    <option value="">中華民國</option>
-                                                    <option value="">香港</option>
-                                                </select>
-                                            </div>
+                                    <!--說明-->
+                                    <div class="col-md-12 mt-1">
+                                        <div class="alert alert-warning">
+                                            <p>本公司及負責人保證所提供之相關資料和證明文件均正確無誤，並授權高鉅科技及其收單銀行得將之提供予財團法人金融聯合徵信中心、聯合信用卡處理中心及財政部指定之機構建檔；且同意高鉅科技及與收單銀行之事業單位，得將本商店(公司及負責人)提供之資料，於法令許可範圍內，作為蒐集、電腦處理、國際傳輸及其他行政或文宣推廣之用途。
+                                            </p>
                                         </div>
-                                        <div class="col-6 col-md-3">
-                                            <div class="form-group">
-                                                <label for="allot_bank_currency">幣別</label>
-                                                <select id="allot_bank_currency" name="allot_bank_currency"
-                                                    class="form-control">
-                                                    <option selected value=""></option>
-                                                    <option value="NTD">台幣</option>
-                                                    <option value="USD">美元</option>
-                                                    <option value="CNY">人民幣</option>
-                                                    <option value="HKD">港幣</option>
-                                                    <option value="JPY">日圓</option>
-                                                    <option value="EUR">歐元</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-md-3">
-                                            <div class="form-group">
-                                                <label for="allot_bank_name_1">選擇銀行</label>
-                                                <select class="form-control" id="allot_bank_name_1"
-                                                    name="allot_bank_name_1" tabindex="-1" aria-hidden="true">
-                                                    <option selected value=""></option>
-                                                    <option value="1">000 中央銀行</option>
-                                                    <option value="2">004 臺灣銀行</option>
-                                                    <option value="3">005 土地銀行</option>
-                                                    <option value="4">006 合作金庫</option>
-                                                    <option value="5">007 第一銀行</option>
-                                                    <option value="6">008 華南銀行</option>
-                                                    <option value="7">009 彰化銀行</option>
-                                                    <option value="8">011 上海銀行</option>
-                                                    <option value="9">012 台北富邦</option>
-                                                    <option value="10">013 國泰世華</option>
-                                                    <option value="11">016 高雄銀行</option>
-                                                    <option value="12">017 兆豐銀行</option>
-                                                    <option value="13">018 農業金庫</option>
-                                                    <option value="14">020 日商瑞穗銀行</option>
-                                                    <option value="15">021 花旗銀行</option>
-                                                    <option value="16">022 美國銀行</option>
-                                                    <option value="17">023 盤谷銀行</option>
-                                                    <option value="18">025 首都銀行</option>
-                                                    <option value="19">029 新加坡大華銀行</option>
-                                                    <option value="20">030 美商道富銀行</option>
-                                                    <option value="21">039 澳盛銀行</option>
-                                                    <option value="22">048 王道銀行</option>
-                                                    <option value="23">050 臺灣企銀</option>
-                                                    <option value="24">052 渣打銀行</option>
-                                                    <option value="25">053 台中銀行</option>
-                                                    <option value="26">054 京城銀行</option>
-                                                    <option value="27">060 兆豐票券</option>
-                                                    <option value="28">061 中華票券</option>
-                                                    <option value="29">062 國際票券</option>
-                                                    <option value="30">066 萬通票券</option>
-                                                    <option value="31">072 德意志銀行</option>
-                                                    <option value="32">075 東亞銀行</option>
-                                                    <option value="33">076 摩根大通銀行</option>
-                                                    <option value="34">081 滙豐銀行</option>
-                                                    <option value="35">082 巴黎銀行</option>
-                                                    <option value="36">085 新加坡華僑銀行</option>
-                                                    <option value="37">086 東方匯理銀行</option>
-                                                    <option value="38">092 瑞士銀行</option>
-                                                    <option value="39">093 安智銀行</option>
-                                                    <option value="40">098 三菱東京日聯銀行</option>
-                                                    <option value="41">101 瑞興銀行</option>
-                                                    <option value="42">102 華泰銀行</option>
-                                                    <option value="43">103 新光銀行</option>
-                                                    <option value="44">104 台北五信</option>
-                                                    <option value="45">108 陽信銀行</option>
-                                                    <option value="46">114 基隆一信</option>
-                                                    <option value="47">115 基隆二信</option>
-                                                    <option value="48">118 板信銀行</option>
-                                                    <option value="49">119 淡水一信</option>
-                                                    <option value="50">120 淡水信合社</option>
-                                                    <option value="51">124 宜蘭信合社</option>
-                                                    <option value="52">127 桃園信合社</option>
-                                                    <option value="53">130 新竹一信</option>
-                                                    <option value="54">132 新竹三信</option>
-                                                    <option value="55">146 台中二信</option>
-                                                    <option value="56">147 三信銀行</option>
-                                                    <option value="57">158 彰化一信</option>
-                                                    <option value="58">161 彰化五信</option>
-                                                    <option value="59">162 彰化六信</option>
-                                                    <option value="60">163 彰化十信</option>
-                                                    <option value="61">165 鹿港信合社</option>
-                                                    <option value="62">178 嘉義三信</option>
-                                                    <option value="63">188 台南三信</option>
-                                                    <option value="64">204 高雄三信</option>
-                                                    <option value="65">215 花蓮一信</option>
-                                                    <option value="66">216 花蓮二信</option>
-                                                    <option value="67">222 澎湖一信</option>
-                                                    <option value="68">223 澎湖二信</option>
-                                                    <option value="69">224 金門信合社</option>
-                                                    <option value="70">321 三井住友銀行</option>
-                                                    <option value="71">372 大慶票券</option>
-                                                    <option value="72">380 中國銀行</option>
-                                                    <option value="73">381 交通銀行</option>
-                                                    <option value="74">382 中國建設銀行</option>
-                                                    <option value="75">503 基隆漁會</option>
-                                                    <option value="76">504 瑞芳/萬里漁會</option>
-                                                    <option value="77">505 頭城/蘇澳漁會</option>
-                                                    <option value="78">506 桃園漁會</option>
-                                                    <option value="79">507 新竹漁會</option>
-                                                    <option value="80">512 雲林區漁會</option>
-                                                    <option value="81">515 嘉義區漁會</option>
-                                                    <option value="82">517 南市區漁會</option>
-                                                    <option value="83">518 南縣區漁會</option>
-                                                    <option value="84">520 小港區漁會；高雄區漁會</option>
-                                                    <option value="85">521 彌陀/永安/興達港/林園區漁會</option>
-                                                    <option value="86">523 東港/琉球/林邊區漁會</option>
-                                                    <option value="87">524 新港區漁會</option>
-                                                    <option value="88">525 澎湖區漁會</option>
-                                                    <option value="89">603 基隆地區農會</option>
-                                                    <option value="90">605 高雄市農會</option>
-                                                    <option value="91">606 新北市農會</option>
-                                                    <option value="92">607 宜蘭地區農會</option>
-                                                    <option value="93">608 桃園地區農會</option>
-                                                    <option value="94">609 中華民國農會</option>
-                                                    <option value="95">610 新竹地區農會</option>
-                                                    <option value="96">611 後龍農會</option>
-                                                    <option value="97">612 豐原市農會；神岡鄉農會</option>
-                                                    <option value="98">613 名間/集集農會</option>
-                                                    <option value="99">614 彰化地區農會</option>
-                                                    <option value="100">616 雲林地區農會</option>
-                                                    <option value="101">617 嘉義地區農會</option>
-                                                    <option value="102">618 台南地區農會</option>
-                                                    <option value="103">619 高雄地區農會</option>
-                                                    <option value="104">620 屏東地區農會</option>
-                                                    <option value="105">621 花蓮地區農會</option>
-                                                    <option value="106">622 台東地區農會</option>
-                                                    <option value="107">623 台北市農會</option>
-                                                    <option value="108">624 澎湖農會</option>
-                                                    <option value="109">625 台中市農會</option>
-                                                    <option value="110">627 連江縣農會</option>
-                                                    <option value="111">700 中華郵政</option>
-                                                    <option value="112">803 聯邦銀行</option>
-                                                    <option value="113">805 遠東銀行</option>
-                                                    <option value="114">806 元大銀行</option>
-                                                    <option value="115">807 永豐銀行</option>
-                                                    <option value="116">808 玉山銀行</option>
-                                                    <option value="117">809 凱基銀行</option>
-                                                    <option value="118">810 星展銀行</option>
-                                                    <option value="119">812 台新銀行</option>
-                                                    <option value="120">814 大眾銀行</option>
-                                                    <option value="121">815 日盛銀行</option>
-                                                    <option value="122">816 安泰銀行</option>
-                                                    <option value="123">822 中國信託</option>
-                                                    <option value="124">901 大里市農會</option>
-                                                    <option value="125">903 汐止農會</option>
-                                                    <option value="126">904 新莊農會</option>
-                                                    <option value="127">910 聯資中心</option>
-                                                    <option value="128">912 冬山農會</option>
-                                                    <option value="129">916 草屯農會</option>
-                                                    <option value="130">922 臺南農會</option>
-                                                    <option value="132">928 板橋農會</option>
-                                                    <option value="133">951 北農中心</option>
-                                                    <option value="134">952 南部地區農漁會</option>
-                                                    <option value="136">954 中部地區農漁會</option>
-                                                    <option value="137">995 關貿網路</option>
-                                                    <option value="138">996 財政部國庫署</option>
-                                                    <option value="139">997 南資中心</option>
-                                                    <option value="141">510 農金資中心</option>
-                                                    <option value="142">960 台灣樂天</option>
-                                                    <option value="143">975 美國運通</option>
-                                                    <option value="144">978 台灣永旺</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-md-3">
-                                            <div class="form-group">
-                                                <label for="allot_bank_ext_1">選擇分行</label>
-                                                <select class="form-control" id="allot_bank_ext_1"
-                                                    name="allot_bank_ext_1" tabindex="-1" aria-hidden="true">
-                                                    <option value="0" selected="selected"></option>
-                                                    <option value="2">0022 國庫局</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-md-3">
-                                        <div class="col-md-4">
-                                            <div class="form-group"> <label for="allot_bank_idname">帳戶名稱</label> <input
-                                                    id="allot_bank_idname" name="allot_bank_idname" type="text"
-                                                    class="form-control"></div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group"> <label for="allot_bank_id">帳戶號碼</label> <input
-                                                    id="allot_bank_id" name="allot_bank_id" type="text"
-                                                    class="form-control"></div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group collapse"> <label>SwiftCode</label> <input
-                                                    id="allot_bank_swift_code" name="allot_bank_swift_code" type="text"
-                                                    class="form-control"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--說明-->
-                                <div class="col-md-12 mt-1">
-                                    <div class="alert alert-warning">
-                                        <p>本公司及負責人保證所提供之相關資料和證明文件均正確無誤，並授權高鉅科技及其收單銀行得將之提供予財團法人金融聯合徵信中心、聯合信用卡處理中心及財政部指定之機構建檔；且同意高鉅科技及與收單銀行之事業單位，得將本商店(公司及負責人)提供之資料，於法令許可範圍內，作為蒐集、電腦處理、國際傳輸及其他行政或文宣推廣之用途。
-                                        </p>
                                     </div>
                                 </div>
                                 <div class="mt-5 d-flex justify-content-center">
@@ -1274,7 +1275,7 @@
     <!--form-company end-->
 
     <!--form-oneself begin-->
-    <div id="form_oneself" class="container-fluid bg-lightgray collapse">
+    <div id="form_oneself" class="bg-lightgray collapse">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 pt-md-5 pt-2">
@@ -1797,343 +1798,346 @@
                                 </div>
 
                                 <!--上傳檔案begin-->
-                                <div class="col-md-12">
-                                    <div class="titlebar">
-                                        <i class="far fa-file-image"></i> 文件上傳
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="wrap_table_r">
-                                                <div class="c_table">
-                                                    <div class="c_tr header">
-                                                        <div class="c_td">
-                                                            文件名稱
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="titlebar">
+                                            <i class="far fa-file-image"></i> 文件上傳
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="wrap_table_r">
+                                                    <div class="c_table">
+                                                        <div class="c_tr header">
+                                                            <div class="c_td">
+                                                                文件名稱
+                                                            </div>
+                                                            <div class="c_td">
+                                                                檔案類型：.jpg .jpeg .pdf .png
+                                                            </div>
                                                         </div>
-                                                        <div class="c_td">
-                                                            檔案類型：.jpg .jpeg .pdf .png
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                負責人身分證正面
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'>上傳檔案顯示區</div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            負責人身分證正面
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                負責人身分證反面
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'></div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'>上傳檔案顯示區</div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
-                                                            </label>
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                負責人第二證件(有照片之駕照、健保卡(擇一))
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'></div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            負責人身分證反面
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                營業照片4張(包含地址、店名)
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'></div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png" multiple>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'></div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
-                                                            </label>
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                銀行存摺封面影本
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'></div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png">
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            負責人第二證件(有照片之駕照、健保卡(擇一))
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                其他
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'></div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png">
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'></div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            營業照片4張(包含地址、店名)
-                                                        </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'></div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png" multiple>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            銀行存摺封面影本
-                                                        </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'></div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png">
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            其他
-                                                        </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'></div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png">
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="c_tr">
-                                                        <div class="c_td">
-                                                            其他
-                                                        </div>
-                                                        <div class="c_td">
-                                                            <label class="uploadbutton">
-                                                                <div class="button"><i class="fas fa-file-upload"></i>
-                                                                    上傳檔案</div>
-                                                                <div class='input-file-text'></div>
-                                                                <input class="input-file" type="file"
-                                                                    accept=".jpg, .jpeg ,.pdf ,.png ">
-                                                            </label>
-                                                        </div>
+                                                        <div class="c_tr">
+                                                            <div class="c_td">
+                                                                其他
+                                                            </div>
+                                                            <div class="c_td">
+                                                                <label class="uploadbutton">
+                                                                    <div class="button"><i class="fas fa-file-upload"></i>
+                                                                        上傳檔案</div>
+                                                                    <div class='input-file-text'></div>
+                                                                    <input class="input-file" type="file"
+                                                                        accept=".jpg, .jpeg ,.pdf ,.png ">
+                                                                </label>
+                                                            </div>
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!--上傳檔案end-->
-                                <div class="col-md-12">
-                                    <div class="titlebar">
-                                        <i class="far fa-file-image"></i> 撥款帳戶
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6 col-md-3">
-                                            <div class="form-group">
-                                                <label for="allot_bank_country">國別</label>
-                                                <select id="allot_bank_country" name="allot_bank_country"
-                                                    class="form-control">
-                                                    <option selected value=""></option>
-                                                    <option value="">中華民國</option>
-                                                    <option value="">香港</option>
-                                                </select>
+                                    <!--上傳檔案end-->
+                                    <div class="col-md-12">
+                                        <div class="titlebar">
+                                            <i class="far fa-file-image"></i> 撥款帳戶
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="allot_bank_country">國別</label>
+                                                    <select id="allot_bank_country" name="allot_bank_country"
+                                                        class="form-control">
+                                                        <option selected value=""></option>
+                                                        <option value="">中華民國</option>
+                                                        <option value="">香港</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="allot_bank_currency">幣別</label>
+                                                    <select id="allot_bank_currency" name="allot_bank_currency"
+                                                        class="form-control">
+                                                        <option selected value=""></option>
+                                                        <option value="NTD">台幣</option>
+                                                        <option value="USD">美元</option>
+                                                        <option value="CNY">人民幣</option>
+                                                        <option value="HKD">港幣</option>
+                                                        <option value="JPY">日圓</option>
+                                                        <option value="EUR">歐元</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="allot_bank_name_2">選擇銀行</label>
+                                                    <select class="form-control" id="allot_bank_name_2"
+                                                        name="allot_bank_name_2" tabindex="-1" aria-hidden="true">
+                                                        <option selected value=""></option>
+                                                        <option value="1">000 中央銀行</option>
+                                                        <option value="2">004 臺灣銀行</option>
+                                                        <option value="3">005 土地銀行</option>
+                                                        <option value="4">006 合作金庫</option>
+                                                        <option value="5">007 第一銀行</option>
+                                                        <option value="6">008 華南銀行</option>
+                                                        <option value="7">009 彰化銀行</option>
+                                                        <option value="8">011 上海銀行</option>
+                                                        <option value="9">012 台北富邦</option>
+                                                        <option value="10">013 國泰世華</option>
+                                                        <option value="11">016 高雄銀行</option>
+                                                        <option value="12">017 兆豐銀行</option>
+                                                        <option value="13">018 農業金庫</option>
+                                                        <option value="14">020 日商瑞穗銀行</option>
+                                                        <option value="15">021 花旗銀行</option>
+                                                        <option value="16">022 美國銀行</option>
+                                                        <option value="17">023 盤谷銀行</option>
+                                                        <option value="18">025 首都銀行</option>
+                                                        <option value="19">029 新加坡大華銀行</option>
+                                                        <option value="20">030 美商道富銀行</option>
+                                                        <option value="21">039 澳盛銀行</option>
+                                                        <option value="22">048 王道銀行</option>
+                                                        <option value="23">050 臺灣企銀</option>
+                                                        <option value="24">052 渣打銀行</option>
+                                                        <option value="25">053 台中銀行</option>
+                                                        <option value="26">054 京城銀行</option>
+                                                        <option value="27">060 兆豐票券</option>
+                                                        <option value="28">061 中華票券</option>
+                                                        <option value="29">062 國際票券</option>
+                                                        <option value="30">066 萬通票券</option>
+                                                        <option value="31">072 德意志銀行</option>
+                                                        <option value="32">075 東亞銀行</option>
+                                                        <option value="33">076 摩根大通銀行</option>
+                                                        <option value="34">081 滙豐銀行</option>
+                                                        <option value="35">082 巴黎銀行</option>
+                                                        <option value="36">085 新加坡華僑銀行</option>
+                                                        <option value="37">086 東方匯理銀行</option>
+                                                        <option value="38">092 瑞士銀行</option>
+                                                        <option value="39">093 安智銀行</option>
+                                                        <option value="40">098 三菱東京日聯銀行</option>
+                                                        <option value="41">101 瑞興銀行</option>
+                                                        <option value="42">102 華泰銀行</option>
+                                                        <option value="43">103 新光銀行</option>
+                                                        <option value="44">104 台北五信</option>
+                                                        <option value="45">108 陽信銀行</option>
+                                                        <option value="46">114 基隆一信</option>
+                                                        <option value="47">115 基隆二信</option>
+                                                        <option value="48">118 板信銀行</option>
+                                                        <option value="49">119 淡水一信</option>
+                                                        <option value="50">120 淡水信合社</option>
+                                                        <option value="51">124 宜蘭信合社</option>
+                                                        <option value="52">127 桃園信合社</option>
+                                                        <option value="53">130 新竹一信</option>
+                                                        <option value="54">132 新竹三信</option>
+                                                        <option value="55">146 台中二信</option>
+                                                        <option value="56">147 三信銀行</option>
+                                                        <option value="57">158 彰化一信</option>
+                                                        <option value="58">161 彰化五信</option>
+                                                        <option value="59">162 彰化六信</option>
+                                                        <option value="60">163 彰化十信</option>
+                                                        <option value="61">165 鹿港信合社</option>
+                                                        <option value="62">178 嘉義三信</option>
+                                                        <option value="63">188 台南三信</option>
+                                                        <option value="64">204 高雄三信</option>
+                                                        <option value="65">215 花蓮一信</option>
+                                                        <option value="66">216 花蓮二信</option>
+                                                        <option value="67">222 澎湖一信</option>
+                                                        <option value="68">223 澎湖二信</option>
+                                                        <option value="69">224 金門信合社</option>
+                                                        <option value="70">321 三井住友銀行</option>
+                                                        <option value="71">372 大慶票券</option>
+                                                        <option value="72">380 中國銀行</option>
+                                                        <option value="73">381 交通銀行</option>
+                                                        <option value="74">382 中國建設銀行</option>
+                                                        <option value="75">503 基隆漁會</option>
+                                                        <option value="76">504 瑞芳/萬里漁會</option>
+                                                        <option value="77">505 頭城/蘇澳漁會</option>
+                                                        <option value="78">506 桃園漁會</option>
+                                                        <option value="79">507 新竹漁會</option>
+                                                        <option value="80">512 雲林區漁會</option>
+                                                        <option value="81">515 嘉義區漁會</option>
+                                                        <option value="82">517 南市區漁會</option>
+                                                        <option value="83">518 南縣區漁會</option>
+                                                        <option value="84">520 小港區漁會；高雄區漁會</option>
+                                                        <option value="85">521 彌陀/永安/興達港/林園區漁會</option>
+                                                        <option value="86">523 東港/琉球/林邊區漁會</option>
+                                                        <option value="87">524 新港區漁會</option>
+                                                        <option value="88">525 澎湖區漁會</option>
+                                                        <option value="89">603 基隆地區農會</option>
+                                                        <option value="90">605 高雄市農會</option>
+                                                        <option value="91">606 新北市農會</option>
+                                                        <option value="92">607 宜蘭地區農會</option>
+                                                        <option value="93">608 桃園地區農會</option>
+                                                        <option value="94">609 中華民國農會</option>
+                                                        <option value="95">610 新竹地區農會</option>
+                                                        <option value="96">611 後龍農會</option>
+                                                        <option value="97">612 豐原市農會；神岡鄉農會</option>
+                                                        <option value="98">613 名間/集集農會</option>
+                                                        <option value="99">614 彰化地區農會</option>
+                                                        <option value="100">616 雲林地區農會</option>
+                                                        <option value="101">617 嘉義地區農會</option>
+                                                        <option value="102">618 台南地區農會</option>
+                                                        <option value="103">619 高雄地區農會</option>
+                                                        <option value="104">620 屏東地區農會</option>
+                                                        <option value="105">621 花蓮地區農會</option>
+                                                        <option value="106">622 台東地區農會</option>
+                                                        <option value="107">623 台北市農會</option>
+                                                        <option value="108">624 澎湖農會</option>
+                                                        <option value="109">625 台中市農會</option>
+                                                        <option value="110">627 連江縣農會</option>
+                                                        <option value="111">700 中華郵政</option>
+                                                        <option value="112">803 聯邦銀行</option>
+                                                        <option value="113">805 遠東銀行</option>
+                                                        <option value="114">806 元大銀行</option>
+                                                        <option value="115">807 永豐銀行</option>
+                                                        <option value="116">808 玉山銀行</option>
+                                                        <option value="117">809 凱基銀行</option>
+                                                        <option value="118">810 星展銀行</option>
+                                                        <option value="119">812 台新銀行</option>
+                                                        <option value="120">814 大眾銀行</option>
+                                                        <option value="121">815 日盛銀行</option>
+                                                        <option value="122">816 安泰銀行</option>
+                                                        <option value="123">822 中國信託</option>
+                                                        <option value="124">901 大里市農會</option>
+                                                        <option value="125">903 汐止農會</option>
+                                                        <option value="126">904 新莊農會</option>
+                                                        <option value="127">910 聯資中心</option>
+                                                        <option value="128">912 冬山農會</option>
+                                                        <option value="129">916 草屯農會</option>
+                                                        <option value="130">922 臺南農會</option>
+                                                        <option value="132">928 板橋農會</option>
+                                                        <option value="133">951 北農中心</option>
+                                                        <option value="134">952 南部地區農漁會</option>
+                                                        <option value="136">954 中部地區農漁會</option>
+                                                        <option value="137">995 關貿網路</option>
+                                                        <option value="138">996 財政部國庫署</option>
+                                                        <option value="139">997 南資中心</option>
+                                                        <option value="141">510 農金資中心</option>
+                                                        <option value="142">960 台灣樂天</option>
+                                                        <option value="143">975 美國運通</option>
+                                                        <option value="144">978 台灣永旺</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="allot_bank_ext_2">選擇分行</label>
+                                                    <select class="form-control" id="allot_bank_ext_2"
+                                                        name="allot_bank_ext_2" tabindex="-1" aria-hidden="true">
+                                                        <option value="0" selected="selected"></option>
+                                                        <option value="2">0022 國庫局</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 col-md-3">
-                                            <div class="form-group">
-                                                <label for="allot_bank_currency">幣別</label>
-                                                <select id="allot_bank_currency" name="allot_bank_currency"
-                                                    class="form-control">
-                                                    <option selected value=""></option>
-                                                    <option value="NTD">台幣</option>
-                                                    <option value="USD">美元</option>
-                                                    <option value="CNY">人民幣</option>
-                                                    <option value="HKD">港幣</option>
-                                                    <option value="JPY">日圓</option>
-                                                    <option value="EUR">歐元</option>
-                                                </select>
+                                        <div class="row mb-md-3">
+                                            <div class="col-md-4">
+                                                <div class="form-group"> <label for="allot_bank_idname">帳戶名稱</label> <input
+                                                        id="allot_bank_idname" name="allot_bank_idname" type="text"
+                                                        class="form-control"></div>
                                             </div>
-                                        </div>
-                                        <div class="col-6 col-md-3">
-                                            <div class="form-group">
-                                                <label for="allot_bank_name_2">選擇銀行</label>
-                                                <select class="form-control" id="allot_bank_name_2"
-                                                    name="allot_bank_name_2" tabindex="-1" aria-hidden="true">
-                                                    <option selected value=""></option>
-                                                    <option value="1">000 中央銀行</option>
-                                                    <option value="2">004 臺灣銀行</option>
-                                                    <option value="3">005 土地銀行</option>
-                                                    <option value="4">006 合作金庫</option>
-                                                    <option value="5">007 第一銀行</option>
-                                                    <option value="6">008 華南銀行</option>
-                                                    <option value="7">009 彰化銀行</option>
-                                                    <option value="8">011 上海銀行</option>
-                                                    <option value="9">012 台北富邦</option>
-                                                    <option value="10">013 國泰世華</option>
-                                                    <option value="11">016 高雄銀行</option>
-                                                    <option value="12">017 兆豐銀行</option>
-                                                    <option value="13">018 農業金庫</option>
-                                                    <option value="14">020 日商瑞穗銀行</option>
-                                                    <option value="15">021 花旗銀行</option>
-                                                    <option value="16">022 美國銀行</option>
-                                                    <option value="17">023 盤谷銀行</option>
-                                                    <option value="18">025 首都銀行</option>
-                                                    <option value="19">029 新加坡大華銀行</option>
-                                                    <option value="20">030 美商道富銀行</option>
-                                                    <option value="21">039 澳盛銀行</option>
-                                                    <option value="22">048 王道銀行</option>
-                                                    <option value="23">050 臺灣企銀</option>
-                                                    <option value="24">052 渣打銀行</option>
-                                                    <option value="25">053 台中銀行</option>
-                                                    <option value="26">054 京城銀行</option>
-                                                    <option value="27">060 兆豐票券</option>
-                                                    <option value="28">061 中華票券</option>
-                                                    <option value="29">062 國際票券</option>
-                                                    <option value="30">066 萬通票券</option>
-                                                    <option value="31">072 德意志銀行</option>
-                                                    <option value="32">075 東亞銀行</option>
-                                                    <option value="33">076 摩根大通銀行</option>
-                                                    <option value="34">081 滙豐銀行</option>
-                                                    <option value="35">082 巴黎銀行</option>
-                                                    <option value="36">085 新加坡華僑銀行</option>
-                                                    <option value="37">086 東方匯理銀行</option>
-                                                    <option value="38">092 瑞士銀行</option>
-                                                    <option value="39">093 安智銀行</option>
-                                                    <option value="40">098 三菱東京日聯銀行</option>
-                                                    <option value="41">101 瑞興銀行</option>
-                                                    <option value="42">102 華泰銀行</option>
-                                                    <option value="43">103 新光銀行</option>
-                                                    <option value="44">104 台北五信</option>
-                                                    <option value="45">108 陽信銀行</option>
-                                                    <option value="46">114 基隆一信</option>
-                                                    <option value="47">115 基隆二信</option>
-                                                    <option value="48">118 板信銀行</option>
-                                                    <option value="49">119 淡水一信</option>
-                                                    <option value="50">120 淡水信合社</option>
-                                                    <option value="51">124 宜蘭信合社</option>
-                                                    <option value="52">127 桃園信合社</option>
-                                                    <option value="53">130 新竹一信</option>
-                                                    <option value="54">132 新竹三信</option>
-                                                    <option value="55">146 台中二信</option>
-                                                    <option value="56">147 三信銀行</option>
-                                                    <option value="57">158 彰化一信</option>
-                                                    <option value="58">161 彰化五信</option>
-                                                    <option value="59">162 彰化六信</option>
-                                                    <option value="60">163 彰化十信</option>
-                                                    <option value="61">165 鹿港信合社</option>
-                                                    <option value="62">178 嘉義三信</option>
-                                                    <option value="63">188 台南三信</option>
-                                                    <option value="64">204 高雄三信</option>
-                                                    <option value="65">215 花蓮一信</option>
-                                                    <option value="66">216 花蓮二信</option>
-                                                    <option value="67">222 澎湖一信</option>
-                                                    <option value="68">223 澎湖二信</option>
-                                                    <option value="69">224 金門信合社</option>
-                                                    <option value="70">321 三井住友銀行</option>
-                                                    <option value="71">372 大慶票券</option>
-                                                    <option value="72">380 中國銀行</option>
-                                                    <option value="73">381 交通銀行</option>
-                                                    <option value="74">382 中國建設銀行</option>
-                                                    <option value="75">503 基隆漁會</option>
-                                                    <option value="76">504 瑞芳/萬里漁會</option>
-                                                    <option value="77">505 頭城/蘇澳漁會</option>
-                                                    <option value="78">506 桃園漁會</option>
-                                                    <option value="79">507 新竹漁會</option>
-                                                    <option value="80">512 雲林區漁會</option>
-                                                    <option value="81">515 嘉義區漁會</option>
-                                                    <option value="82">517 南市區漁會</option>
-                                                    <option value="83">518 南縣區漁會</option>
-                                                    <option value="84">520 小港區漁會；高雄區漁會</option>
-                                                    <option value="85">521 彌陀/永安/興達港/林園區漁會</option>
-                                                    <option value="86">523 東港/琉球/林邊區漁會</option>
-                                                    <option value="87">524 新港區漁會</option>
-                                                    <option value="88">525 澎湖區漁會</option>
-                                                    <option value="89">603 基隆地區農會</option>
-                                                    <option value="90">605 高雄市農會</option>
-                                                    <option value="91">606 新北市農會</option>
-                                                    <option value="92">607 宜蘭地區農會</option>
-                                                    <option value="93">608 桃園地區農會</option>
-                                                    <option value="94">609 中華民國農會</option>
-                                                    <option value="95">610 新竹地區農會</option>
-                                                    <option value="96">611 後龍農會</option>
-                                                    <option value="97">612 豐原市農會；神岡鄉農會</option>
-                                                    <option value="98">613 名間/集集農會</option>
-                                                    <option value="99">614 彰化地區農會</option>
-                                                    <option value="100">616 雲林地區農會</option>
-                                                    <option value="101">617 嘉義地區農會</option>
-                                                    <option value="102">618 台南地區農會</option>
-                                                    <option value="103">619 高雄地區農會</option>
-                                                    <option value="104">620 屏東地區農會</option>
-                                                    <option value="105">621 花蓮地區農會</option>
-                                                    <option value="106">622 台東地區農會</option>
-                                                    <option value="107">623 台北市農會</option>
-                                                    <option value="108">624 澎湖農會</option>
-                                                    <option value="109">625 台中市農會</option>
-                                                    <option value="110">627 連江縣農會</option>
-                                                    <option value="111">700 中華郵政</option>
-                                                    <option value="112">803 聯邦銀行</option>
-                                                    <option value="113">805 遠東銀行</option>
-                                                    <option value="114">806 元大銀行</option>
-                                                    <option value="115">807 永豐銀行</option>
-                                                    <option value="116">808 玉山銀行</option>
-                                                    <option value="117">809 凱基銀行</option>
-                                                    <option value="118">810 星展銀行</option>
-                                                    <option value="119">812 台新銀行</option>
-                                                    <option value="120">814 大眾銀行</option>
-                                                    <option value="121">815 日盛銀行</option>
-                                                    <option value="122">816 安泰銀行</option>
-                                                    <option value="123">822 中國信託</option>
-                                                    <option value="124">901 大里市農會</option>
-                                                    <option value="125">903 汐止農會</option>
-                                                    <option value="126">904 新莊農會</option>
-                                                    <option value="127">910 聯資中心</option>
-                                                    <option value="128">912 冬山農會</option>
-                                                    <option value="129">916 草屯農會</option>
-                                                    <option value="130">922 臺南農會</option>
-                                                    <option value="132">928 板橋農會</option>
-                                                    <option value="133">951 北農中心</option>
-                                                    <option value="134">952 南部地區農漁會</option>
-                                                    <option value="136">954 中部地區農漁會</option>
-                                                    <option value="137">995 關貿網路</option>
-                                                    <option value="138">996 財政部國庫署</option>
-                                                    <option value="139">997 南資中心</option>
-                                                    <option value="141">510 農金資中心</option>
-                                                    <option value="142">960 台灣樂天</option>
-                                                    <option value="143">975 美國運通</option>
-                                                    <option value="144">978 台灣永旺</option>
-                                                </select>
+                                            <div class="col-md-4">
+                                                <div class="form-group"> <label for="allot_bank_id">帳戶號碼</label> <input
+                                                        id="allot_bank_id" name="allot_bank_id" type="text"
+                                                        class="form-control"></div>
                                             </div>
-                                        </div>
-                                        <div class="col-6 col-md-3">
-                                            <div class="form-group">
-                                                <label for="allot_bank_ext_2">選擇分行</label>
-                                                <select class="form-control" id="allot_bank_ext_2"
-                                                    name="allot_bank_ext_2" tabindex="-1" aria-hidden="true">
-                                                    <option value="0" selected="selected"></option>
-                                                    <option value="2">0022 國庫局</option>
-                                                </select>
+                                            <div class="col-md-4">
+                                                <div class="form-group collapse"> <label>SwiftCode</label> <input
+                                                        id="allot_bank_swift_code" name="allot_bank_swift_code" type="text"
+                                                        class="form-control"></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row mb-md-3">
-                                        <div class="col-md-4">
-                                            <div class="form-group"> <label for="allot_bank_idname">帳戶名稱</label> <input
-                                                    id="allot_bank_idname" name="allot_bank_idname" type="text"
-                                                    class="form-control"></div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group"> <label for="allot_bank_id">帳戶號碼</label> <input
-                                                    id="allot_bank_id" name="allot_bank_id" type="text"
-                                                    class="form-control"></div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group collapse"> <label>SwiftCode</label> <input
-                                                    id="allot_bank_swift_code" name="allot_bank_swift_code" type="text"
-                                                    class="form-control"></div>
+                                    <!--說明-->
+                                    <div class="col-md-12 mt-1 ">
+                                        <div class="alert alert-warning">
+                                            <p>本公司及負責人保證所提供之相關資料和證明文件均正確無誤，並授權高鉅科技及其收單銀行得將之提供予財團法人金融聯合徵信中心、聯合信用卡處理中心及財政部指定之機構建檔；且同意高鉅科技及與收單銀行之事業單位，得將本商店(公司及負責人)提供之資料，於法令許可範圍內，作為蒐集、電腦處理、國際傳輸及其他行政或文宣推廣之用途。
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                                <!--說明-->
-                                <div class="col-md-12 mt-1 ">
-                                    <div class="alert alert-warning">
-                                        <p>本公司及負責人保證所提供之相關資料和證明文件均正確無誤，並授權高鉅科技及其收單銀行得將之提供予財團法人金融聯合徵信中心、聯合信用卡處理中心及財政部指定之機構建檔；且同意高鉅科技及與收單銀行之事業單位，得將本商店(公司及負責人)提供之資料，於法令許可範圍內，作為蒐集、電腦處理、國際傳輸及其他行政或文宣推廣之用途。
-                                        </p>
-                                    </div>
+
                                 </div>
                                 <div class="mt-5 d-flex justify-content-center">
                                     <div class="col-6 col-sm-5 col-md-4 col-lg-3">
